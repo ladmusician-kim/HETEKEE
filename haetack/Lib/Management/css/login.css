@@ -1,0 +1,41 @@
+body {
+    background: url("/Lib/images/common/bg/range-bg-mobile.jpg") no-repeat;
+    background-size: cover;
+}
+.dandi-btn-login {
+    width: 100% !important;
+    background: rgba(53, 169, 152, 1) !important;
+    font-weight: bold;
+    color: #fff;
+}
+.dandi-btn-login:hover {
+    width: 100% !important;
+    background: rgba(53, 169, 152, 1) !important;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+
+
+
+
+
+.dandi-white {
+    color: #fff !important;
+}
+.dandi-red {
+    color: #ff4444 !important;
+}
+
+
+
+
+
+/* theme */
+.panel {
+    border-radius: 15px !important;
+}
+.panel-heading {
+    border-color: #C7CAD0 !important;
+}

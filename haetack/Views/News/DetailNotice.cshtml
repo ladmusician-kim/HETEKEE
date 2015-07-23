@@ -1,0 +1,62 @@
+﻿@model haetack.Views.News.NoticeViewModel
+@{
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+@section Style {
+    <link href="/Lib/css/news/notice/detail-web.css" rel="stylesheet" />
+    <link href="/Lib/css/news/notice/detail-mobile.css" rel="stylesheet" />
+}
+@section Script {
+}
+
+<!-- Home Section -->
+<section id="news" class="bg-dark-alfa-50 main-section page-section" data-background="/Lib/images/news/notice/bg_notice.png">
+    <div class="container relative">
+        <div class="align-center">
+            <div class="main-title">
+                공지사항
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Content Section -->
+<section class="page-section detail-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-offset-1 col-sm-10">
+                <div class="blog-item mb-80 mb-xs-40">
+                    <div class="news-date align-left">
+                        @(Model.Notice.Updated.ToString("yyyy.MM.dd"))
+                    </div>
+                    <div class="news-title align-left">
+                        @(Model.Notice.Title)
+                    </div>
+                    <div class="news-content">
+                        @Html.Raw(Model.Notice.Content)
+                    </div>
+                </div>
+                <div class="mb-80 mb-xs-40 notice-writer-container">
+                    <ul class="media-list text comment-list notice-writer">
+                        <li class="media comment-item">
+                            <a class="pull-left">
+                                <img class="media-object comment-avatar notice-writer-image" src="/News/GetUserPic?id=@(Model.Notice.For_UserId)" />
+                            </a>
+                            <div class="media-body notice-writer-info">
+                                <div class="comment-item-data">
+                                    <div class="comment-author hetekee-color notice-write-name">
+                                        <span class="hetekee-content-color">by</span> @(Model.Notice.User.Name)
+                                    </div>
+                                    <p class="notice-writer-role hetekee-content-color">
+                                        @(Model.Notice.User.Role)
+                                    </p>
+                                </div>
+                                
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,61 @@
+﻿@model haetack.Views.Management.UserViewModel
+@{
+    Layout = "/Views/Shared/_ManagementLayout.cshtml";
+}
+@section Style {
+}
+@section Script {
+    <script type="text/javascript">
+        var app = angular.module('myApp', []).
+            controller('ManagementCtrl', function ($scope) {
+            });
+    </script>
+
+}
+
+<section id="content">
+    <section class="vbox">
+        <header class="header bg-white b-b">
+            <p>@(Model.User.Name) 사진 변경</p>
+        </header>
+        <section class="scrollable wrapper">
+            <div class="row">
+                <div class="col-lg-6">
+                    <section class="panel">
+                        <div class="panel-body">
+                            @if (Model.Message != null && Model.Message.Length > 3)
+                            {
+                                <header class="panel-heading bg-primary lter no-borders">
+                                    <div class="clearfix">
+                                        <div class="clear">
+                                            <small class="text-muted">@(Model.Message)</small>
+                                        </div>
+                                    </div>
+                                </header>
+                            }
+
+                            @using (Html.BeginForm("ChangeUserPic", "Management", FormMethod.Post, new { id = "chagePassword", enctype = "multipart/form-data" }))
+                            {
+                                <input type="hidden" name="id" value="@(Model.User.Id)" />
+                                <p class="dandi-sub-title m-t">기존 사진</p>
+                                <p class="dandi-description">
+                                    <img class="media-object comment-avatar notice-writer-image"
+                                         src="/News/GetUserPic?id=@(Model.User.Id)" />
+                                </p>
+                                <p class="dandi-sub-title m-t">새로운 비밀번호</p>
+                                <p class="dandi-description">
+                                    <input type="file" class="form-control" placeholder="" name="pic">
+                                </p>
+                                <p class="align-right">
+                                    <a href="/Management/UserDetail?id=@(Model.User.Id)" class="btn btn-s-md btn-default">뒤로가기</a>
+                                    <input type="submit" class="btn btn-s-md btn-defaul" value="변경하기" />
+                                </p>
+                            }
+
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </section>
+</section>

@@ -1,0 +1,73 @@
+﻿@{
+    Layout = "/Views/Shared/_ManagementLayout.cshtml";
+}
+@section Style {
+    <link href="/Lib/Management/common/css/ng-table.css" rel="stylesheet" />
+    <style type="text/css">
+        .detail {
+            font-weight: bold;
+        }
+         a:hover {
+            cursor: pointer;
+        }
+        .dbDelete {
+            color: red !important;
+        }
+    </style>
+}
+@section Script {
+    <script src="/Lib/Management/js/pressless.js"></script>
+}
+
+<section id="content" ng-controller="ManagementCtrl">
+    <section class="vbox">
+        <header class="header bg-success bg-gradient">
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#seller" data-toggle="tab">보도자료 관리</a></li>
+            </ul>
+        </header>
+        <section class="scrollable wrapper">
+            <div class="tab-content">
+                <div class="tab-pane active" id="seller">
+                    <section class="panel">
+                        <header class="panel-heading">
+                            총 보도자료 수: <span style="color:#ff4444">{{pressless.totalCount}}명</span>
+                        </header>
+                        <div class="table-responsive">
+                            <table ng-table="tableParams" class="table table-striped m-b-none text-sm">
+                                <tr ng-repeat="item in pressless.items">
+                                    <td data-title="'번호'" sortable="'Id'">
+                                        {{item.Id}}
+                                    </td>
+                                    <td data-title="'제목'" sortable="'Title'">
+                                        <a class="detail" href="/Management/DetailPressless?id={{item.Id}}">{{item.Title}}</a>
+                                    </td>
+                                    <td data-title="'생성일'" sortable="'Created'">
+                                        {{item.Created | shortdate}}
+                                    </td>
+                                    <td data-title="'수정일'" sortable="'Updated'">
+                                        {{item.Updated | shortdate}}
+                                    </td>
+                                    <td data-title="'상태'" sortable="'IsDeprecated'">
+                                        <span ng-if="item.IsDeprecated" style="color: red">
+                                            삭제됨
+                                        </span>
+                                        <span ng-if="!item.IsDeprecated">
+                                            게시중
+                                        </span>
+                                    </td>
+                                    <td data-title="'상태'" sortable="'IsDeprecated'">
+                                        <a class="dbDelete" ng-click="deletePressless(item)">DB에서 삭제</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-lg-12 m-t align-center">
+                            <a href="/Management/CreatePressless" class="btn btn-s-md btn-primary">보도자료 추가</a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </section>
+</section>

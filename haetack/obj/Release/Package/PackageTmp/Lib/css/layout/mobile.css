@@ -1,0 +1,135 @@
+﻿/* pad */
+@media only screen and (max-width: 1200px) and (min-width: 600px) {
+    .hetekee-home-title p {
+        font-size: 250% !important;
+        padding-bottom: 5px !important;
+    }
+    .hetekee-home-content {
+        margin-top: 15px !important;    
+    }
+    .hetekee-home-content p {
+        font-size: 126% !important;
+    }
+    .hetekee-googleplay {
+        margin-top: 30px !important;
+    }
+    .hetekee-video-title {
+        font-size: 235% !important;
+        margin-bottom: 13px !important; 
+    }
+    .hetekee-video-content p {
+        font-size: 120% !important;
+    }
+    .hetekee-footer-title {
+        font-size: 150% !important;
+    }
+    .hetekee-footer-content {
+        margin-top: 20px !important;
+    }
+    .hetekee-footer-content p {
+        font-size: 105% !important;
+    }
+    .hetekee-footer-content-subscription img {
+        width: 34% !important;
+    }
+    .hetekee-facebook {
+        margin-right: 11% !important;
+    }
+    .hetekee-video-content-page {
+        padding: 70px !important;
+        background: #f3f3f3;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .hetekee-sub-nav li a {
+        padding: 0 10px !important;
+    }
+    nav.mobile-on {
+
+    }
+    .hetekee-nav-panel {
+        height: 62px;
+        background: url('/Lib/images/menu/bg_menu.png') no-repeat;
+        background-size: cover;
+    }
+    .transperency-nav {
+        background: none !important;
+    }
+    .hetekee-footer {
+        padding-top: 15px !important;
+        padding-bottom: 0px !important;
+    }
+    .hetekee-footer-item {
+        width: 33%;
+    }
+    .hetekee-footer {
+        background: #3db39d !important;
+    }
+    .hetekee-footer-margin-left {
+        margin-left: 20.5%;
+    }
+    .hetekee-footer-title {
+        font-size: 20px;
+        font-family: NotoSans-Bold !important;
+        color: #fff !important;
+    }
+    .hetekee-footer-content {
+        margin-top: 7px;
+    }
+    .hetekee-footer-icon {
+        margin-top: 7px;
+    }
+    .hetekee-footer-icon img{
+        width: 38px;
+    }
+    .hetekee-footer-icon img.blog{
+        margin-left: 5px;
+    }
+    .hetekee-footer-icon img.facebook{
+        margin-right: 5px;
+    }
+    .hetekee-footer-content p {
+        padding-bottom: 5px;
+        color: #fff;
+        font-size: 13px;
+        font-family: NotoSansCJKkr-Regular !important;
+    }
+
+     .hetekee-last-footer {
+        margin-top: 20px;
+        background: #177a69;
+        width: 105%;
+        height: 63px;
+        line-height: 63px;
+        vertical-align: middle;
+    }
+    .hetekee-last-footer img{
+        width: 85% !important;
+    }
+
+   
+    .hetekee-nav-bottom-arrow {
+        display: none;
+    }
+    .mobile-item {
+        display: inline-block;
+    }
+    .web-item {
+        display: none;
+    }
+}
+
+/*iPhone 5 작은거*/ 
+@media screen and (device-aspect-ratio: 2/3) {
+    .hetekee-sub-nav li a {
+        padding: 0 10px !important;
+    }
+}
+
+/*iPhone 5 */
+@media screen and (device-aspect-ratio: 40/71) {
+    .hetekee-sub-nav li a {
+        padding: 0 10px !important;
+    }
+}
+

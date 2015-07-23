@@ -1,0 +1,68 @@
+﻿@model haetack.Views.News.PresslessViewModel
+@{
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+@section Style {
+    <link href="/Lib/css/news/pressless/detail-web.css" rel="stylesheet" />
+    <link href="/Lib/css/news/pressless/detail-mobile.css" rel="stylesheet" />
+}
+@section Script {
+}
+
+<!-- Home Section -->
+<section id="news" class="bg-dark-alfa-50 main-section page-section" data-background="/Lib/images/news/pressless/bg_pressrelease.png">
+    <div class="container relative">
+        <div class="align-center">
+            <div class="main-title">
+                보도자료
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Content Section -->
+<section class="page-section detail-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-offset-1 col-sm-10">
+                <div class="blog-item mb-80 mb-xs-40">
+                    <div class="news-date align-left">
+                        @(Model.Pressless.Updated.ToString("yyyy.MM.dd"))
+                    </div>
+                    <div class="news-title align-left">
+                        @(Model.Pressless.Title)
+                    </div>
+                    <div class="news-content">
+                        @Html.Raw(Model.Pressless.Content)
+                    </div>
+                </div>
+                <div class="mb-80 mb-xs-40 pressless-writer-container">
+                    <ul class="media-list text comment-list pressless-writer">
+                        <li class="media comment-item">
+                            <a class="pull-left">
+                                <img class="media-object comment-avatar pressless-writer-image" src="/News/GetUserPic?id=@(Model.Pressless.For_UserId)" />
+                            </a>
+                            <div class="media-body pressless-writer-info">
+                                <div class="comment-item-data">
+                                    <div class="comment-author hetekee-color pressless-write-name">
+                                        <span class="hetekee-content-color">by</span> @(Model.Pressless.User.Name)
+                                    </div>
+                                    <p class="pressless-writer-role hetekee-content-color">
+                                        @(Model.Pressless.User.Role)
+                                    </p>
+                                </div>
+
+                            </div>
+                            @if (Model.Pressless.PresslessUrl != null && Model.Pressless.PresslessUrl.Length > 3)
+                            {
+                                <a href="@(Model.Pressless.PresslessUrl)" target="_blank" class="pull-right btn btn-mod btn-border btn-large pressless-view-btn">
+                                    기사보기
+                                </a>
+                            }
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

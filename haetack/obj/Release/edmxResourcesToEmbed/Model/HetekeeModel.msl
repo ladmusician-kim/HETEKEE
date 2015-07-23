@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="HetekeeModelStoreContainer" CdmEntityContainer="HetekeeEntities">
+    <EntitySetMapping Name="Admins">
+      <EntityTypeMapping TypeName="HetekeeModel.Admin">
+        <MappingFragment StoreEntitySet="Admin">
+          <ScalarProperty Name="role" ColumnName="role" />
+          <ScalarProperty Name="pic" ColumnName="pic" />
+          <ScalarProperty Name="isdeprecated" ColumnName="isdeprecated" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="updated" ColumnName="updated" />
+          <ScalarProperty Name="created" ColumnName="created" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="C_id" ColumnName="_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Notices">
+      <EntityTypeMapping TypeName="HetekeeModel.Notice">
+        <MappingFragment StoreEntitySet="Notice">
+          <ScalarProperty Name="for_userid" ColumnName="for_userid" />
+          <ScalarProperty Name="isdeprecated" ColumnName="isdeprecated" />
+          <ScalarProperty Name="hit" ColumnName="hit" />
+          <ScalarProperty Name="updated" ColumnName="updated" />
+          <ScalarProperty Name="created" ColumnName="created" />
+          <ScalarProperty Name="subcontent" ColumnName="subcontent" />
+          <ScalarProperty Name="content" ColumnName="content" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="C_noticeid" ColumnName="_noticeid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NoticeImages">
+      <EntityTypeMapping TypeName="HetekeeModel.NoticeImage">
+        <MappingFragment StoreEntitySet="NoticeImage">
+          <ScalarProperty Name="content" ColumnName="content" />
+          <ScalarProperty Name="C_noticeimageid" ColumnName="_noticeimageid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Presslesses">
+      <EntityTypeMapping TypeName="HetekeeModel.Pressless">
+        <MappingFragment StoreEntitySet="Pressless">
+          <ScalarProperty Name="presslessurl" ColumnName="presslessurl" />
+          <ScalarProperty Name="for_userid" ColumnName="for_userid" />
+          <ScalarProperty Name="isdeprecated" ColumnName="isdeprecated" />
+          <ScalarProperty Name="hit" ColumnName="hit" />
+          <ScalarProperty Name="updated" ColumnName="updated" />
+          <ScalarProperty Name="created" ColumnName="created" />
+          <ScalarProperty Name="subcontent" ColumnName="subcontent" />
+          <ScalarProperty Name="content" ColumnName="content" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="C_presslessid" ColumnName="_presslessid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PresslessImages">
+      <EntityTypeMapping TypeName="HetekeeModel.PresslessImage">
+        <MappingFragment StoreEntitySet="PresslessImage">
+          <ScalarProperty Name="content" ColumnName="content" />
+          <ScalarProperty Name="C_presslessimageid" ColumnName="_presslessimageid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="NoticeToNoticeImage" TypeName="HetekeeModel.NoticeToNoticeImage" StoreEntitySet="NoticeToNoticeImage">
+      <EndProperty Name="NoticeImage">
+        <ScalarProperty Name="C_noticeimageid" ColumnName="for_noticeimageid" />
+      </EndProperty>
+      <EndProperty Name="Notice">
+        <ScalarProperty Name="C_noticeid" ColumnName="for_noticeid" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="PresslessToPresslessImage" TypeName="HetekeeModel.PresslessToPresslessImage" StoreEntitySet="PresslessToPresslessImage">
+      <EndProperty Name="PresslessImage">
+        <ScalarProperty Name="C_presslessimageid" ColumnName="for_presslessimageid" />
+      </EndProperty>
+      <EndProperty Name="Pressless">
+        <ScalarProperty Name="C_presslessid" ColumnName="for_presslessid" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

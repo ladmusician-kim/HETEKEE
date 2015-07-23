@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HetekeeModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityType Name="Admin">
+    <Key>
+      <PropertyRef Name="_id" />
+    </Key>
+    <Property Name="_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="created" Type="date" Nullable="false" />
+    <Property Name="updated" Type="date" />
+    <Property Name="username" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="password" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="isdeprecated" Type="bit" Nullable="false" />
+    <Property Name="pic" Type="varbinary(max)" />
+    <Property Name="role" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Notice">
+    <Key>
+      <PropertyRef Name="_noticeid" />
+    </Key>
+    <Property Name="_noticeid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="title" Type="text" Nullable="false" />
+    <Property Name="content" Type="text" Nullable="false" />
+    <Property Name="subcontent" Type="text" Nullable="false" />
+    <Property Name="created" Type="date" Nullable="false" />
+    <Property Name="updated" Type="date" Nullable="false" />
+    <Property Name="hit" Type="int" />
+    <Property Name="isdeprecated" Type="bit" />
+    <Property Name="for_userid" Type="int" />
+  </EntityType>
+  <EntityType Name="NoticeImage">
+    <Key>
+      <PropertyRef Name="_noticeimageid" />
+    </Key>
+    <Property Name="_noticeimageid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="content" Type="varbinary(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="NoticeToNoticeImage">
+    <Key>
+      <PropertyRef Name="for_noticeid" />
+      <PropertyRef Name="for_noticeimageid" />
+    </Key>
+    <Property Name="for_noticeid" Type="int" Nullable="false" />
+    <Property Name="for_noticeimageid" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Pressless">
+    <Key>
+      <PropertyRef Name="_presslessid" />
+    </Key>
+    <Property Name="_presslessid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="title" Type="text" Nullable="false" />
+    <Property Name="content" Type="text" Nullable="false" />
+    <Property Name="subcontent" Type="text" Nullable="false" />
+    <Property Name="created" Type="date" Nullable="false" />
+    <Property Name="updated" Type="date" Nullable="false" />
+    <Property Name="hit" Type="int" />
+    <Property Name="isdeprecated" Type="bit" />
+    <Property Name="for_userid" Type="int" />
+    <Property Name="presslessurl" Type="text" />
+  </EntityType>
+  <EntityType Name="PresslessImage">
+    <Key>
+      <PropertyRef Name="_presslessimageid" />
+    </Key>
+    <Property Name="_presslessimageid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="content" Type="varbinary(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PresslessToPresslessImage">
+    <Key>
+      <PropertyRef Name="for_presslessid" />
+      <PropertyRef Name="for_presslessimageid" />
+    </Key>
+    <Property Name="for_presslessid" Type="int" Nullable="false" />
+    <Property Name="for_presslessimageid" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Notice_NoticeToNoticeImage">
+    <End Role="Notice" Type="Self.Notice" Multiplicity="1" />
+    <End Role="NoticeToNoticeImage" Type="Self.NoticeToNoticeImage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Notice">
+        <PropertyRef Name="_noticeid" />
+      </Principal>
+      <Dependent Role="NoticeToNoticeImage">
+        <PropertyRef Name="for_noticeid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Notice_User">
+    <End Role="Admin" Type="Self.Admin" Multiplicity="0..1" />
+    <End Role="Notice" Type="Self.Notice" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Admin">
+        <PropertyRef Name="_id" />
+      </Principal>
+      <Dependent Role="Notice">
+        <PropertyRef Name="for_userid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NoticeImage_NoticeToNoticeImage">
+    <End Role="NoticeImage" Type="Self.NoticeImage" Multiplicity="1" />
+    <End Role="NoticeToNoticeImage" Type="Self.NoticeToNoticeImage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NoticeImage">
+        <PropertyRef Name="_noticeimageid" />
+      </Principal>
+      <Dependent Role="NoticeToNoticeImage">
+        <PropertyRef Name="for_noticeimageid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Pressless_PresslessToPresslessImage">
+    <End Role="Pressless" Type="Self.Pressless" Multiplicity="1" />
+    <End Role="PresslessToPresslessImage" Type="Self.PresslessToPresslessImage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pressless">
+        <PropertyRef Name="_presslessid" />
+      </Principal>
+      <Dependent Role="PresslessToPresslessImage">
+        <PropertyRef Name="for_presslessid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Pressless_User">
+    <End Role="Admin" Type="Self.Admin" Multiplicity="0..1" />
+    <End Role="Pressless" Type="Self.Pressless" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Admin">
+        <PropertyRef Name="_id" />
+      </Principal>
+      <Dependent Role="Pressless">
+        <PropertyRef Name="for_userid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PresslessImage_PresslessToPresslessImage">
+    <End Role="PresslessImage" Type="Self.PresslessImage" Multiplicity="1" />
+    <End Role="PresslessToPresslessImage" Type="Self.PresslessToPresslessImage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PresslessImage">
+        <PropertyRef Name="_presslessimageid" />
+      </Principal>
+      <Dependent Role="PresslessToPresslessImage">
+        <PropertyRef Name="for_presslessimageid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="HetekeeModelStoreContainer">
+    <EntitySet Name="Admin" EntityType="Self.Admin" Schema="ladmusician01" store:Type="Tables" />
+    <EntitySet Name="Notice" EntityType="Self.Notice" Schema="ladmusician01" store:Type="Tables" />
+    <EntitySet Name="NoticeImage" EntityType="Self.NoticeImage" Schema="ladmusician01" store:Type="Tables" />
+    <EntitySet Name="NoticeToNoticeImage" EntityType="Self.NoticeToNoticeImage" Schema="ladmusician01" store:Type="Tables" />
+    <EntitySet Name="Pressless" EntityType="Self.Pressless" Schema="ladmusician01" store:Type="Tables" />
+    <EntitySet Name="PresslessImage" EntityType="Self.PresslessImage" Schema="ladmusician01" store:Type="Tables" />
+    <EntitySet Name="PresslessToPresslessImage" EntityType="Self.PresslessToPresslessImage" Schema="ladmusician01" store:Type="Tables" />
+    <AssociationSet Name="FK_Notice_NoticeToNoticeImage" Association="Self.FK_Notice_NoticeToNoticeImage">
+      <End Role="Notice" EntitySet="Notice" />
+      <End Role="NoticeToNoticeImage" EntitySet="NoticeToNoticeImage" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Notice_User" Association="Self.FK_Notice_User">
+      <End Role="Admin" EntitySet="Admin" />
+      <End Role="Notice" EntitySet="Notice" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NoticeImage_NoticeToNoticeImage" Association="Self.FK_NoticeImage_NoticeToNoticeImage">
+      <End Role="NoticeImage" EntitySet="NoticeImage" />
+      <End Role="NoticeToNoticeImage" EntitySet="NoticeToNoticeImage" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Pressless_PresslessToPresslessImage" Association="Self.FK_Pressless_PresslessToPresslessImage">
+      <End Role="Pressless" EntitySet="Pressless" />
+      <End Role="PresslessToPresslessImage" EntitySet="PresslessToPresslessImage" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Pressless_User" Association="Self.FK_Pressless_User">
+      <End Role="Admin" EntitySet="Admin" />
+      <End Role="Pressless" EntitySet="Pressless" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PresslessImage_PresslessToPresslessImage" Association="Self.FK_PresslessImage_PresslessToPresslessImage">
+      <End Role="PresslessImage" EntitySet="PresslessImage" />
+      <End Role="PresslessToPresslessImage" EntitySet="PresslessToPresslessImage" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,107 @@
+﻿
+<!DOCTYPE html>
+<html lang="ko" ng-app="myApp">
+<head>
+    <meta charset="utf-8" />
+    <title>hetekee</title>
+    <meta name="description" content="app, web app, responsive, admin dashboard, admin, flat, flat ui, ui kit, off screen nav" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="/Lib/images/layout/top_logo.png">
+    <link rel="apple-touch-icon" href="/Lib/images/layout/top_logo.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/Lib/images/layout/top_logo.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/Lib/images/layout/top_logo.png">
+
+    <link href="/Lib/management/Lib/css/bootstrap.css" rel="stylesheet" />
+    <link href="/Lib/management/Lib/css/animate.css" rel="stylesheet" />
+    <link href="/Lib/management/Lib/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="/Lib/management/Lib/css/font.css" rel="stylesheet" />
+    <link href="/Lib/management/Lib/js/fullcalendar/fullcalendar.css" rel="stylesheet" />
+    <link href="/Lib/management/Lib/js/datatables/datatables.css" rel="stylesheet" />
+    <link href="/Lib/management/Lib/css/plugin.css" rel="stylesheet" />
+    <link href="/Lib/management/Lib/css/app.css" rel="stylesheet" />
+    <link href="/Lib/management/css/common.css" rel="stylesheet" />
+    
+    @RenderSection("Style", false)
+    <!--[if lt IE 9]>
+      <script src="js/ie/respond.min.js" cache="false"></script>
+      <script src="js/ie/html5.js" cache="false"></script>
+      <script src="js/ie/fix.js" cache="false"></script>
+    <![endif]-->
+</head>
+<body>
+    <section class="hbox stretch">
+        <!-- .aside -->
+        <aside class="bg-dark aside-sm" id="nav">
+            <section class="vbox">
+                <header class="dker nav-bar">
+                    <a class="btn btn-link visible-xs" data-toggle="class:nav-off-screen" data-target="#nav">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    <a href="#" class="nav-brand" data-toggle="fullscreen">HETEKEE</a>
+                    <a class="btn btn-link visible-xs" data-toggle="class:show" data-target=".nav-user">
+                        <i class="fa fa-comment-o"></i>
+                    </a>
+                </header>
+                <section>
+                    <nav class="nav-primary hidden-xs">
+                        <ul class="nav">
+                            <li>
+                                <a href="/Management/User">
+                                    <i class="fa fa-eye"></i>
+                                    <span>USER</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/Management/Notice">
+                                    <i class="fa fa-file-text"></i>
+                                    <span>공지사항</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/Management/Pressless">
+                                    <i class="fa fa-flask"></i>
+                                    <span>보도자료</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/Management/Logout">
+                                    <i class="fa fa-pencil"></i>
+                                    <span>로그아웃</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+                <footer class="footer bg-gradient hidden-xs">
+                    <a href="#nav" data-toggle="class:nav-vertical" class="btn btn-sm btn-link m-l-n-sm">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </footer>
+            </section>
+        </aside>
+
+        @RenderBody()
+    </section>
+
+
+    <script src="/Lib/management/Lib/js/jquery.min.js"></script>
+    <script src="/Lib/management/Lib/js/bootstrap.js"></script>
+    <script src="/Lib/management/Lib/js/app.js"></script>
+    @*<script src="/Lib/management/Lib/js/app.plugin.js"></script>*@
+    <script src="/Lib/management/Lib/js/app.data.js"></script>
+    <!-- fuelux -->
+    <script src="/Lib/management/Lib/js/fuelux/fuelux.js"></script>
+    <script src="/Lib/management/Lib/js/libs/underscore-min.js"></script>
+    <!-- datatables -->
+    <script src="/Lib/management/Lib/js/datatables/jquery.dataTables.min.js"></script>
+
+    <script src="/Lib/Management/common/js/angular.js"></script>
+    <script src="/Lib/Management/common/js/ajaxBody.js"></script>
+    <script src="/Lib/Management/common/js/filters.js"></script>
+    <script src="/Lib/Management/common/js/ng-table.js"></script>
+    <script src="/Lib/Management/common/js/ngTableResetPage.js"></script>
+
+    @RenderSection("Script", false)
+</body>
+</html>

@@ -1,0 +1,38 @@
+﻿@media only screen and (min-width: 600px) {
+    .main-section {
+        padding: 210px 120px 120px 120px !important;
+        background-position-y:60px;
+    }
+
+    .main-title {
+        font-size: 62px;
+        color: #fff;
+        font-family: Moebius_Regular_kor;
+    }
+
+    .cf-section {
+        padding: 4% 0 !important;
+    }
+
+    .cf-title {
+        font-size: 200%;
+        font-family: Moebius_Regular_kor !important;
+    }
+
+    .cf-content {
+        margin-top: 1%;
+        margin-bottom: 7%;
+    }
+
+    .cf-content p {
+        font-size: 122%;
+        letter-spacing: -0.5px;
+        padding-bottom: 8px;
+        font-family: NotoSansCJKkr-Regular !important;
+    }
+    .no-item img {
+        width: 50%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}

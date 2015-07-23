@@ -1,0 +1,79 @@
+﻿@model haetack.Views.Management.UserViewModel
+@{
+    Layout = "/Views/Shared/_ManagementLayout.cshtml";
+}
+@section Style {
+}
+@section Script {
+    <script type="text/javascript">
+        var app = angular.module('myApp', []).
+            controller('ManagementCtrl', function ($scope) {
+            });
+        $($('.form-control')[0]).focus();
+    </script>
+
+}
+
+<section id="content">
+    <section class="vbox">
+        <header class="header bg-white b-b">
+            <p>회원 추가</p>
+        </header>
+        <section class="scrollable wrapper">
+            <div class="row">
+                <div class="col-lg-6">
+                    <section class="panel">
+                        <div class="panel-body">
+                            @if (Model.Message != null && Model.Message.Length > 3)
+                            {
+                                <header class="panel-heading bg-primary lter no-borders">
+                                    <div class="clearfix">
+                                        <div class="clear">
+                                            <small class="text-muted">@(Model.Message)</small>
+                                        </div>
+                                    </div>
+                                </header>
+                            }
+
+                            @using (Html.BeginForm("CreateUser", "Management", FormMethod.Post, new { id = "createUser", enctype = "multipart/form-data" }))
+                            {
+                                <p class="dandi-sub-title m-t">이름</p>
+                                <p class="dandi-description">
+                                    <input type="text" class="form-control" placeholder="" name="name">
+                                </p>
+                                <p class="dandi-sub-title m-t">직책</p>
+                                <p class="dandi-description">
+                                    <input type="text" class="form-control" placeholder="" name="role">
+                                </p>
+                                <p class="dandi-sub-title m-t">아이디</p>
+                                <p class="dandi-description">
+                                    <input type="text" class="form-control" placeholder="" name="username">
+                                </p>
+                                <p class="dandi-sub-title m-t">비밀번호</p>
+                                <p class="dandi-description">
+                                    <input type="password" class="form-control" placeholder="" name="password">
+                                </p>
+                                <p class="dandi-sub-title m-t">비밀번호 확인</p>
+                                <p class="dandi-description">
+                                    <input type="password" class="form-control" placeholder="" name="confirmPass">
+                                </p>
+                                <p class="dandi-sub-title m-t">멋지고 이쁜 사진</p>
+                                <p class="dandi-description">
+                                    <input type="file" class="form-control" placeholder="" 
+                                           name="pic">
+                                </p>
+                                <div class="line"></div>
+
+                                <p class="align-right">
+                                    <a href="/Management/User" class="btn btn-s-md btn-default">목록보기</a>
+                                    <input type="submit" class="btn btn-s-md btn-defaul" value="추가하기" />
+                                </p>
+                            }
+
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </section>
+</section>

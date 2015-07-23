@@ -1,0 +1,170 @@
+﻿@media only screen and (min-width: 600px) {
+    .hetekee-desktop-nav {
+        margin-top: 10px;
+    }
+    .hetekee-nav-panel {
+        height: 90px;
+        background: url('/Lib/images/menu/bg_menu.png') no-repeat;
+        background-size: cover;
+        filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+        src='/Lib/images/menu/bg_menu.png',
+        sizingMethod='scale');
+    }
+    .hetekee-menu-selected {
+        border-bottom: 4px solid #3db39d;
+    }
+    .transperency-nav {
+        background: none !important;
+    }
+
+    .hetekee-nav {
+        margin-top: 10px;
+    }
+    .hetekee-nav-logo-wrap .logo {
+        max-width: 135px !important;
+    }
+    .hetekee-menu-logo {
+        /*-webkit-margin-top: 10px;*/
+        margin-top: 10px;
+        width: 100%;
+    }
+    .hetekee-nav li {
+        margin-left: 40px;
+    }
+    .hetekee-nav li {
+        margin-left: 40px;
+    }
+    .hetekee-nav li.hetekee-nav-blog, .hetekee-nav li.hetekee-nav-language {
+        margin-left: 16px !important;
+    }
+    .hetekee-nav-bottom-arrow {
+        margin-left: 6px;
+        width: 13px;
+        -webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);  
+    -moz-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
+    -o-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -ms-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
+    transition: all 0.27s cubic-bezier(0, 0.49, 1, 0.76);
+    }
+
+
+    .hetekee-nav li a {
+        font-family: 'Lato' !important;
+        font-size: 16px;
+        color: #fff;
+    }
+    .hetekee-nav li a.hetekee-nav-item {
+        font-weight: 700;
+        position: relative;
+    }
+    .hetekee-nav li a:hover {
+        color: #3DB39D !important;
+    }
+    .hetekee-nav-item-on {
+        position: absolute;
+        top: 67px;
+        z-index: 999;
+        display: none;
+    }
+    .hetekee-nav-item-service-on {
+        left: 23px;
+    }
+    .hetekee-nav-item-news-on {
+        left: 16px;
+    }
+    .hetekee-nav-item-aboutus-on {
+        left: 29px;
+    }
+    .hetekee-menu-icon {
+        width: 24px;
+    }
+    /*.hetekee-sub-nav {
+        display: inline-block !important;
+    }*/
+
+
+
+
+    .hetekee-sub-nav {
+        width: 100% !important;
+        height: 50px;
+        /*background: rgba(61, 179, 157, 0.9) !important;*/
+        background: #3db39d !important;
+        filter:alpha(opacity=0.9);
+        -webkit-background: rgba(61, 179, 157, 0.9) !important;
+    }
+    .hetekee-sub-nav li{
+        margin-right: 50px !important;
+    }
+    .hetekee-sub-nav li a {
+        height: 50px !important;
+        line-height: 50px !important;
+        vertical-align: middle;
+        color: #fff !important;
+        font-family: Moebius_Regular_kor !important;
+    }
+    .hetekee-sub-nav li a:hover {
+        color: #272727 !important;
+    }
+
+
+
+    /* FOOTER */
+    .hetekee-footer-item {
+        width: 33%;
+    }
+    .hetekee-footer {
+        background: #3db39d !important;
+        padding: 70px 0 0 0 !important;
+    }
+    .hetekee-footer-left-panel {
+        padding-left: 24%;
+    }
+    .hetekee-footer-center-panel {
+        padding-left: 11%;
+        padding-right: 11%;
+    }
+    .hetekee-footer-padding-right {
+        padding-right: 10%;
+    }
+    .hetekee-footer-title {
+        font-size: 20px;
+        font-family: NotoSans-Bold !important;
+        color: #fff !important;
+    }
+    .hetekee-footer-content {
+        margin-top: 30px;
+    }
+    .hetekee-footer-content p {
+        padding-bottom: 11px;
+        color: #fff;
+        font-size: 15px;
+        font-family: NotoSansCJKkr-Regular !important;
+    }
+    .hetekee-footer-content-subscription {
+        margin-top: 4px;
+    }
+    .hetekee-footer-content-subscription img {
+        width: 43px;
+    }
+    .hetekee-last-footer {
+        margin-top: 70px;
+        background: #177a69;
+        width: 101%;
+        height: 86px;
+        line-height: 86px;
+        vertical-align: middle;
+    }
+    .hetekee-last-footer img{
+        width: 29%;
+    }
+    .hetekee-facebook {
+        margin-right: 16px;
+    }
+    .mobile-item {
+        display: none;
+    }
+    .web-item {
+        display: inline-block;
+    }
+}

@@ -1,0 +1,273 @@
+﻿/* pad */
+@media only screen and (max-width: 1200px) and (min-width: 600px) {
+    .hetekee-home-title p {
+        font-size: 250% !important;
+        padding-bottom: 5px !important;
+    }
+    .hetekee-home-content {
+        margin-top: 15px !important;    
+    }
+    .hetekee-home-content p {
+        font-size: 126% !important;
+    }
+    .hetekee-googleplay {
+        margin-top: 30px !important;
+    }
+    .hetekee-video-title {
+        font-size: 235% !important;
+        margin-bottom: 13px !important; 
+    }
+    .hetekee-video-content p {
+        font-size: 120% !important;
+    }
+    .hetekee-footer-title {
+        font-size: 150% !important;
+    }
+    .hetekee-footer-content {
+        margin-top: 20px !important;
+    }
+    .hetekee-footer-content p {
+        font-size: 105% !important;
+    }
+    .hetekee-footer-content-subscription img {
+        width: 34% !important;
+    }
+    .hetekee-facebook {
+        margin-right: 11% !important;
+    }
+    .hetekee-video-content-page {
+        padding: 70px !important;
+        background: #f3f3f3;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .hetekee-page {
+        padding-bottom: 0px;
+    }
+
+    .hetekee-main-fullscreen-content {
+        margin-left: 5% !important;
+    }
+
+    .hetekee-home-title {
+    }
+
+    .hetekee-home-title p {
+        font-size: 24px;
+        color: #fff;
+        font-family: Moebius_Regular_kor !important;
+        padding-bottom: 8px;
+    }
+
+    .hetekee-home-content {
+    }
+
+    .hetekee-home-content p {
+        font-size: 12px !important;
+        color: #fff;
+        letter-spacing: -1.5px;
+        font-family: NotoSansCJKkr-Regular !important;
+        padding-bottom: 4px;
+    }
+    .more-description {
+        color: #cbd3d6 !important; 
+        font-size: 13px !important;
+    }
+
+    .hetekee-googleplay {
+        margin-top: 10px;
+    }
+    .main-img-container {
+        margin-top: 25px;
+    }
+
+
+
+
+    /* 동영상 */
+    .hetekee-video-page {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .hetekee-video-title {
+        font-size: 21px;
+        font-family: Moebius_Regular_kor !important;
+        margin-bottom: 20px;
+    }
+
+    .hetekee-video-content p {
+        font-size: 14px;
+        font-family: NotoSansCJKkr-Regular !important;
+        letter-spacing: -0.5px;
+    }
+    .hetekee-video {
+        width: 100%;
+        height: 100%;
+        min-height: 150px;
+    }
+
+    .hetekee-video-content-page {
+        padding-top: 40px !important;
+        padding-bottom: 40px !important;
+    }
+    .hetekee-video-content-page {
+        background: #f3f3f3;
+    }
+}
+
+/*iPhone 5 작은거*/
+@media screen and (device-aspect-ratio: 2/3) {
+    .hetekee-page {
+        padding-bottom: 0px;
+    }
+
+    .hetekee-main-fullscreen-content {
+        margin-left: 5% !important;
+    }
+
+    .hetekee-home-title {
+    }
+
+    .hetekee-home-title p {
+        font-size: 24px;
+        color: #fff;
+        font-family: Moebius_Regular_kor !important;
+        padding-bottom: 8px;
+    }
+
+    .hetekee-home-content {
+    }
+
+    .hetekee-home-content p {
+        font-size: 12px !important;
+        color: #fff;
+        letter-spacing: -1.5px;
+        font-family: NotoSansCJKkr-Regular !important;
+        padding-bottom: 4px;
+    }
+    .more-description {
+        color: #cbd3d6 !important; 
+        font-size: 13px !important;
+    }
+
+    .hetekee-googleplay {
+        margin-top: 10px;
+    }
+    .main-img-container {
+        margin-top: 25px;
+    }
+
+
+
+
+    /* 동영상 */
+    .hetekee-video-page {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .hetekee-video-title {
+        font-size: 21px;
+        font-family: Moebius_Regular_kor !important;
+        margin-bottom: 20px;
+    }
+
+    .hetekee-video-content p {
+        font-size: 14px;
+        font-family: NotoSansCJKkr-Regular !important;
+        letter-spacing: -0.5px;
+    }
+    .hetekee-video {
+        width: 100%;
+        height: 100%;
+        min-height: 150px;
+    }
+
+    .hetekee-video-content-page {
+        padding-top: 40px !important;
+        padding-bottom: 40px !important;
+    }
+    .hetekee-video-content-page {
+        background: #f3f3f3;
+    }
+}
+
+/*iPhone 5 */
+@media screen and (device-aspect-ratio: 40/71) {
+    .hetekee-page {
+        padding-bottom: 0px;
+    }
+
+    .hetekee-main-fullscreen-content {
+        margin-left: 5% !important;
+    }
+
+    .hetekee-home-title {
+    }
+
+    .hetekee-home-title p {
+        font-size: 24px;
+        color: #fff;
+        font-family: Moebius_Regular_kor !important;
+        padding-bottom: 8px;
+    }
+
+    .hetekee-home-content {
+    }
+
+    .hetekee-home-content p {
+        font-size: 12px !important;
+        color: #fff;
+        letter-spacing: -1.5px;
+        font-family: NotoSansCJKkr-Regular !important;
+        padding-bottom: 4px;
+    }
+    .more-description {
+        color: #cbd3d6 !important; 
+        font-size: 13px !important;
+    }
+
+    .hetekee-googleplay {
+        margin-top: 10px;
+    }
+    .main-img-container {
+        margin-top: 25px;
+    }
+
+
+
+
+    /* 동영상 */
+    .hetekee-video-page {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .hetekee-video-title {
+        font-size: 21px;
+        font-family: Moebius_Regular_kor !important;
+        margin-bottom: 20px;
+    }
+
+    .hetekee-video-content p {
+        font-size: 14px;
+        font-family: NotoSansCJKkr-Regular !important;
+        letter-spacing: -0.5px;
+    }
+    .hetekee-video {
+        width: 100%;
+        height: 100%;
+        min-height: 150px;
+    }
+
+    .hetekee-video-content-page {
+        padding-top: 40px !important;
+        padding-bottom: 40px !important;
+    }
+    .hetekee-video-content-page {
+        background: #f3f3f3;
+    }
+}

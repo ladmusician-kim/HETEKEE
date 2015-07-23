@@ -1,0 +1,207 @@
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\bin\haetack.dll
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\bin\haetack.pdb
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\bin\Antlr3.Runtime.dll
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\bin\DotNetOpenAuth.AspNet.dll
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\bin\DotNetOpenAuth.Core.dll
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\bin\DotNetOpenAuth.OAuth.Consumer.dll
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\bin\DotNetOpenAuth.OAuth.dll
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\bin\DotNetOpenAuth.OpenId.dll
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\bin\EntityFramework.dll
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\bin\Microsoft.Web.Infrastructure.dll
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\bin\Microsoft.Web.WebPages.OAuth.dll
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\bin\Newtonsoft.Json.dll
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\bin\System.Net.Http.Formatting.dll
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\bin\System.Web.Helpers.dll
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\bin\System.Web.Http.dll
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\bin\System.Web.Http.WebHost.dll
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\bin\System.Web.Mvc.dll
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\bin\System.Web.Optimization.dll
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\bin\System.Web.Razor.dll
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\bin\System.Web.WebPages.Deployment.dll
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\bin\System.Web.WebPages.dll
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\bin\System.Web.WebPages.Razor.dll
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\bin\WebGrease.dll
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\bin\WebMatrix.Data.dll
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\bin\WebMatrix.WebData.dll
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\bin\EntityFramework.xml
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\bin\Newtonsoft.Json.xml
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\bin\System.Net.Http.Formatting.xml
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\bin\System.Web.Helpers.xml
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\bin\System.Web.Http.xml
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\bin\System.Web.Http.WebHost.xml
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\bin\System.Web.Mvc.xml
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\bin\System.Web.Razor.xml
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\bin\System.Web.WebPages.xml
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\bin\System.Web.WebPages.Deployment.xml
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\bin\System.Web.WebPages.Razor.xml
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\bin\WebMatrix.Data.xml
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\bin\Microsoft.Web.WebPages.OAuth.xml
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\bin\WebMatrix.WebData.xml
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\bin\DotNetOpenAuth.AspNet.xml
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\bin\DotNetOpenAuth.Core.xml
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\bin\DotNetOpenAuth.OAuth.Consumer.xml
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\bin\DotNetOpenAuth.OAuth.xml
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\bin\DotNetOpenAuth.OpenId.xml
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\bin\ko\System.Net.Http.Formatting.resources.dll
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\bin\ko\System.Web.Helpers.resources.dll
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\bin\ko\System.Web.Http.resources.dll
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\bin\ko\System.Web.Http.WebHost.resources.dll
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\bin\ko\System.Web.Mvc.resources.dll
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\bin\ko\System.Web.Optimization.resources.dll
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\bin\ko\System.Web.Razor.resources.dll
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\bin\ko\System.Web.WebPages.resources.dll
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\bin\ko\System.Web.WebPages.Deployment.resources.dll
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\bin\ko\System.Web.WebPages.Razor.resources.dll
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\bin\ko\WebMatrix.Data.resources.dll
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\bin\ko\Microsoft.Web.WebPages.OAuth.resources.dll
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\bin\ko\WebMatrix.WebData.resources.dll
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\obj\Debug\haetack.csprojResolveAssemblyReference.cache
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\obj\Debug\haetack.dll
+c:\users\dev_dj\documents\visual studio 2012\Projects\haetack\haetack\obj\Debug\haetack.pdb
+C:\Users\dev_dj\Documents\Visual Studio 2012\Projects\haetack\haetack\bin\haetack.dll.config
+C:\Users\dev_dj\Documents\Visual Studio 2012\Projects\haetack\haetack\bin\System.Net.Http.dll
+C:\Users\dev_dj\Documents\Visual Studio 2012\Projects\haetack\haetack\bin\System.Net.Http.WebRequest.dll
+C:\Users\dev_dj\Documents\Visual Studio 2012\Projects\haetack\haetack\bin\System.Net.Http.xml
+C:\Users\dev_dj\Documents\Visual Studio 2012\Projects\haetack\haetack\bin\System.Net.Http.WebRequest.xml
+C:\Users\dev_dj\Documents\Visual Studio 2012\Projects\haetack\haetack\bin\ko\System.Net.Http.resources.dll
+C:\Users\dev_dj\Documents\Visual Studio 2012\Projects\haetack\haetack\bin\ko\System.Net.Http.WebRequest.resources.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\haetack.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\haetack.pdb
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\Antlr3.Runtime.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\DotNetOpenAuth.Core.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\EntityFramework.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\Microsoft.Web.WebPages.OAuth.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\Newtonsoft.Json.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\System.Net.Http.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\System.Net.Http.Formatting.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\System.Net.Http.WebRequest.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\System.Web.Helpers.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\System.Web.Http.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\System.Web.Http.WebHost.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\System.Web.Mvc.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\System.Web.Optimization.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\System.Web.Razor.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\System.Web.WebPages.Deployment.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\System.Web.WebPages.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\System.Web.WebPages.Razor.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\WebGrease.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\WebMatrix.Data.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\WebMatrix.WebData.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\EntityFramework.xml
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\Newtonsoft.Json.xml
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\System.Net.Http.xml
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\System.Net.Http.Formatting.xml
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\System.Net.Http.WebRequest.xml
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\System.Web.Helpers.xml
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\System.Web.Http.xml
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\System.Web.Http.WebHost.xml
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\System.Web.Mvc.xml
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\System.Web.Razor.xml
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\System.Web.WebPages.xml
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\System.Web.WebPages.Deployment.xml
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\System.Web.WebPages.Razor.xml
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\WebMatrix.Data.xml
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\Microsoft.Web.WebPages.OAuth.xml
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\WebMatrix.WebData.xml
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\DotNetOpenAuth.Core.xml
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\ko\System.Net.Http.resources.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\ko\System.Net.Http.Formatting.resources.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\ko\System.Net.Http.WebRequest.resources.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\ko\System.Web.Helpers.resources.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\ko\System.Web.Http.resources.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\ko\System.Web.Http.WebHost.resources.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\ko\System.Web.Mvc.resources.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\ko\System.Web.Optimization.resources.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\ko\System.Web.Razor.resources.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\ko\System.Web.WebPages.resources.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\ko\System.Web.WebPages.Deployment.resources.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\ko\System.Web.WebPages.Razor.resources.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\ko\WebMatrix.Data.resources.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\ko\Microsoft.Web.WebPages.OAuth.resources.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\ko\WebMatrix.WebData.resources.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\obj\Debug\haetack.csprojResolveAssemblyReference.cache
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\obj\Debug\haetack.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\obj\Debug\haetack.pdb
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\haetack-source_0416\haetack\bin\haetack.dll.config
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\haetack.dll.config
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\haetack.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\haetack.pdb
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\Antlr3.Runtime.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\DotNetOpenAuth.Core.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\EntityFramework.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\Microsoft.Web.WebPages.OAuth.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\Newtonsoft.Json.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\System.Net.Http.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\System.Net.Http.Formatting.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\System.Net.Http.WebRequest.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\System.Web.Helpers.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\System.Web.Http.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\System.Web.Http.WebHost.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\System.Web.Mvc.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\System.Web.Optimization.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\System.Web.Razor.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\System.Web.WebPages.Deployment.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\System.Web.WebPages.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\System.Web.WebPages.Razor.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\WebGrease.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\WebMatrix.Data.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\WebMatrix.WebData.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\EntityFramework.xml
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\Newtonsoft.Json.xml
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\System.Net.Http.xml
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\System.Net.Http.Formatting.xml
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\System.Net.Http.WebRequest.xml
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\System.Web.Helpers.xml
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\System.Web.Http.xml
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\System.Web.Http.WebHost.xml
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\System.Web.Mvc.xml
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\System.Web.Razor.xml
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\System.Web.WebPages.xml
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\System.Web.WebPages.Deployment.xml
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\System.Web.WebPages.Razor.xml
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\WebMatrix.Data.xml
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\Microsoft.Web.WebPages.OAuth.xml
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\WebMatrix.WebData.xml
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\DotNetOpenAuth.Core.xml
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\ko\System.Net.Http.resources.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\ko\System.Net.Http.Formatting.resources.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\ko\System.Net.Http.WebRequest.resources.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\ko\System.Web.Helpers.resources.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\ko\System.Web.Http.resources.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\ko\System.Web.Http.WebHost.resources.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\ko\System.Web.Mvc.resources.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\ko\System.Web.Optimization.resources.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\ko\System.Web.Razor.resources.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\ko\System.Web.WebPages.resources.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\ko\System.Web.WebPages.Deployment.resources.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\ko\System.Web.WebPages.Razor.resources.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\ko\WebMatrix.Data.resources.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\ko\Microsoft.Web.WebPages.OAuth.resources.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\bin\ko\WebMatrix.WebData.resources.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\obj\Debug\haetack.csprojResolveAssemblyReference.cache
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\obj\Debug\haetack.dll
+C:\Users\dev_dj\Desktop\DJ\goqual\outsidework\hetekee\haetack-source_0416\haetack\obj\Debug\haetack.pdb

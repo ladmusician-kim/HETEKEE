@@ -1,0 +1,95 @@
+﻿/* pad */
+@media only screen and (max-width: 1200px) and (min-width: 601px) {
+     .main-section {
+        padding: 200px 70px 110px 70px !important;
+    }
+
+    .main-title {
+        font-size: 300%;
+        color: #fff;
+        font-family: Moebius_Regular_kor;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .main-section {
+        padding: 70px 0 !important;
+        background-position-y: 0px !important;
+    }
+
+    .main-title {
+        font-size: 27px;
+        color: #fff;
+        font-family: Moebius_Regular_kor;
+    }
+
+    .team-section {
+        padding: 20px 0 !important;
+        padding-top: 40px !important;
+    }
+
+    .team-title {
+        font-size: 20px;
+        font-family: Moebius_Regular_kor !important;
+    }
+    .team-line {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        width: 33%;
+    }
+
+    .team-content {
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+
+    .team-content p {
+        font-size: 23px;
+        margin-bottom: 5px;
+        font-family: NotoSansCJKkr-Regular !important;
+    }
+
+
+
+    
+    .member-container {
+        margin-top: 30px;
+    }
+    .member-item {
+        width: 50%;
+        float: left;
+    }
+    .member-item img {
+        width: 75%
+    }
+    .left-panel {
+        padding-left: 30px;
+    }
+    .right-panel {
+        padding-right: 30px;
+    }
+
+    .member-name {
+        font-size: 14px;
+        font-family: NotoSansCJKkr-Medium !important;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+    .member-name-eng {
+        font-size: 14px;
+        font-family: Lato-Regular !important;
+    }
+    .member-content {
+        font-size: 14px;
+        font-family: Lato-Thin !important;
+        margin-bottom: 40px;
+    }
+}
+
+/*iPhone 5 작은거*/ 
+@media screen and (device-aspect-ratio: 2/3) {
+}
+
+/*iPhone 5 */
+@media screen and (device-aspect-ratio: 40/71) {
+}
+

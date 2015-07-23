@@ -1,0 +1,249 @@
+﻿@media only screen and (min-width: 600px) {
+    /* full screen */
+    .hetekee-app-main-img {
+        width: 65%;
+    }
+    .hetekee-app-title {
+        font-size: 300%;
+        font-family: Moebius_Regular_kor !important;
+        margin-bottom: 3%;
+        margin-top: 19%;
+        font-weight: bold;
+    }
+    .hetekee-service-main {
+        padding-bottom: 6% !important;
+        /* padding-top 값은 jqeury로*/
+    }
+    .hetekee-app-sub-content-layout {
+        width: 17% !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        margin-right: 0px;
+    }
+    .hetekee-app-sub-content-layout img {
+        width: 61%;
+    }
+    .main-left-img-panel {
+        padding-right: 13%;
+    }
+    .left-img-panel {
+        padding-right: 10%;
+    }
+    .right-content {
+        padding-left: 0%;
+    }
+    .left-content-panel {
+        padding-left: 6%;
+    }
+    .right-img-panel {
+        padding-left: 4.7%;
+    }
+    .hetekee-app-content p {
+        font-size: 20px;
+        font-family: NotoSansCJKkr-Regular !important;
+        padding-bottom: 2%;
+    }
+     .hetekee-app-sub-content {
+        margin-top: 34px;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    .hetekee-app-sub-content img {
+        width: 61%;
+    }
+    .hetekee-app-sub-content-subscription {
+        font-size: 16px;
+        font-family: NotoSansCJKkr-Medium !important;
+        font-weight: 300 !important;
+        margin-top: 10px;
+    }
+
+
+
+
+     /* content common */
+     .hetekee-service-section {
+        padding-top: 3%;
+        padding-bottom: 3%;
+     }
+    .hetekee-app-img {
+        width: 50%;
+    }
+    .container {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .hetekee-app-content-title {
+        font-size: 280% !important;
+        font-family: Moebius_Bold_kor !important;
+        margin-top: 90px !important;
+        margin-bottom: 20px !important;
+    }
+     .hetekee-function {
+        color: #f26547;
+        margin-top: 3% !important;
+    }
+     .hetekee-dot {
+        width: 11%;
+    }
+   
+    .left-img-content-panel {
+        padding-left: 3%;
+    }
+
+
+
+    /* 내 카드 선택 */
+    .my-card .hetekee-app-content-title {
+        margin-top: 35% !important;
+        margin-bottom: 2% !important;
+    }
+     .hetekee-app-content-description {
+        margin-top: 5%;
+    }
+    .hetekee-app-content-description p {
+        font-size: 20px;
+        font-family: NotoSansCJKkr-Medium !important;
+        padding-bottom: 0.5%;
+    }
+    .hetekee-my-card-content {
+        padding-left: 14%;
+        padding-right: 0 !important;
+    }
+
+
+     /* 혜택 지도*/
+    .map {
+        background: #f3f3f3;
+    }
+    .map-img {
+        width: 69%;
+    }
+    .map .hetekee-app-content-title {
+        margin-top: 32% !important;
+    }
+
+    .map .hetekee-right-pane {
+        padding-left: 0px !important;
+    }
+
+
+    /* 혜택 텍스트*/
+    .text-img {
+        width: 78%
+    }
+    .text .hetekee-app-content-title {
+        margin-top: 29% !important;
+    }
+    .text-right-panel {
+        padding-left: 4.7%;
+    }
+
+     /* 혜택 가계부 */
+    .account {
+        background: #f3f3f3;
+    }
+    .account-img {
+        width: 82%;
+    }
+    .account .hetekee-app-content-title {
+        margin-top: 36% !important;
+    }
+
+    /* GOOD NIGHT */
+    .goodnight-img {
+        width: 66.3%;
+    }
+    .goodnight .hetekee-app-content-title {
+        margin-top: 38% !important;
+    }
+
+     /* Last */
+    .last {
+        background: #f3f3f3;
+    }
+    .last-img {
+        width: 50%;
+    }
+    .hetekee-service-last-title {
+        margin-top: 6%;
+    }
+    .hetekee-service-last-title p {
+        font-size: 240%;
+        font-family: Moebius_Bold_kor !important;
+    }
+    .hetekee-service-last-content {
+        margin-top: 2.5%;
+    }
+    .hetekee-service-last-content p {
+        font-size: 140%;
+        font-family: NotoSansCJKkr-Regular !important;
+        margin-bottom: 0.5% !important;
+    }
+    
+
+    
+
+    
+
+    
+
+   
+
+
+
+
+
+   
+    
+
+    
+
+   
+
+   
+
+    
+
+
+
+   
+    
+    
+    
+
+    
+
+
+    
+
+   
+
+    
+
+   
+
+
+
+
+    /* background */
+    .hetekee-left-bg {
+        position: absolute;
+    }
+    .hetekee-right-bg {
+        position: absolute;
+    }
+    .hetekee-bg-ready {
+        width: 11%;
+    }
+    .hetekee-bg-left-num {
+        width: 2.5%;
+    }
+    .hetekee-bg-right-num {
+        width: 3%;
+    }
+    .hetekee-center-bg {
+        position: absolute;
+        padding-top: 4px;
+    }
+}

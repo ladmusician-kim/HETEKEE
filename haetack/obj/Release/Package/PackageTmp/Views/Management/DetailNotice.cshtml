@@ -1,0 +1,71 @@
+﻿@model haetack.Views.Management.NoticeViewModel
+@{
+    Layout = "/Views/Shared/_ManagementLayout.cshtml";
+}
+@section Style {
+}
+@section Script {
+    <script type="text/javascript">
+        var app = angular.module('myApp', []).
+       controller('ManagementCtrl', function ($scope) {
+       })
+    </script>
+}
+<section id="content" ng-controller="ManagementCtrl">
+    <section class="vbox">
+        <header class="header bg-dark">
+            <p>공지사항</p>
+        </header>
+        <section class="scrollable wrapper">
+            @if (Model.Message != null && Model.Message.Length > 3)
+            {
+                <header class="panel-heading bg-primary lter no-borders">
+                    <div class="clearfix">
+                        <div class="clear">
+                            <small class="text-muted">@(Model.Message)</small>
+                        </div>
+                    </div>
+                </header>
+            }
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 class="font-thin">@(Model.Notice.Title)</h3>
+                </div>
+            </div>
+
+            <div class="line line-dashed"></div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 class="font-thin">@(Model.Notice.SubContent)</h3>
+                </div>
+            </div>
+
+            <div class="line line-dashed"></div>
+
+            <div>
+                <section id="web-application">
+                    <div class="row">
+                        <div class="col-md-12 mt30">
+                            @Html.Raw(Model.Notice.Content)
+
+                            <div class="col-lg-12 m-t align-center">
+                                <a href="/Management/Notice" class="btn btn-s-md btn-default">목록보기</a>
+                                <a href="/Management/ChangeStateNotice?id=@(Model.Notice.Id)" class="btn btn-s-md btn-default">
+                                    @if (Model.Notice.IsDeprecated != null && Model.Notice.IsDeprecated.Value)
+                                    {
+                                        @:글 살리기
+                                    }
+                                    else
+                                    {
+                                        @:글 숨기기
+                                    }
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </section>
+</section>

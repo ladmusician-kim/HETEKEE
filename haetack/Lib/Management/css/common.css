@@ -1,0 +1,61 @@
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+}
+td {
+    text-align: center;
+}
+
+.fp-table {
+    height: 100%;
+    display: table;
+}
+.fp-tableCell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+
+
+.dandi-sub-title {
+    color: #B3B3B3;
+}
+.dandi-description {
+    font-size: 16px;
+    text-align: justify;
+    color: black;
+}
+.dandi-seller-image {
+    max-width: 800px;
+}
+
+
+
+
+
+
+
+
+
+
+.align-right {
+    text-align: right !important;
+}
+.align-left {
+    text-align: left !important;
+}
+.align-center {
+    text-align: center !important;
+}
+.align-justify {
+    text-align: justify !important;
+}
+
+
+
+.dandi-red {
+    color: #ff4444 !important;
+}

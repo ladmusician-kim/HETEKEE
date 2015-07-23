@@ -1,0 +1,64 @@
+﻿@{
+    Layout = "/Views/Shared/_ManagementLayout.cshtml";
+}
+@section Style {
+    <link href="/Lib/Management/common/css/ng-table.css" rel="stylesheet" />
+    <style type="text/css">
+        .detail {
+            font-weight: bold;
+        }
+    </style>
+}
+@section Script {
+    <script src="/Lib/management/js/user.js"></script>
+}
+
+<section id="content" ng-controller="ManagementCtrl">
+    <section class="vbox">
+        <header class="header bg-success bg-gradient">
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#seller" data-toggle="tab">회원관리</a></li>
+            </ul>
+        </header>
+        <section class="scrollable wrapper">
+            <div class="tab-content">
+                <div class="tab-pane active" id="seller">
+                    <section class="panel">
+                        <header class="panel-heading">
+                            총 회원 수: <span style="color:#ff4444">{{user.totalCount}}명</span>
+                        </header>
+                        <div class="table-responsive">
+                            <table ng-table="tableParams" class="table table-striped m-b-none text-sm">
+                                <tr ng-repeat="item in user.items">
+                                    <td data-title="'번호'" sortable="'Id'">
+                                        {{item.Id}}
+                                    </td>
+                                    <td data-title="'이름'" sortable="'Name'">
+                                        <a class="detail" href="/Management/UserDetail?id={{item.Id}}">{{item.Name}}</a>
+                                    </td>
+                                    <td data-title="'아이디'" sortable="'Username'">
+                                        {{item.Username}}
+                                    </td>
+                                    <td data-title="'가입일'" sortable="'Created'">
+                                        {{item.Created | shortdate}}
+                                    </td>
+                                    <td data-title="'상태'" sortable="'IsDeprecated'">
+                                        <span ng-if="item.IsDeprecated" style="color: red">
+                                            비활성
+                                        </span>
+                                        <span ng-if="!item.IsDeprecated">
+                                            활성
+                                        </span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-lg-12 m-t align-center">
+                            <a href="/Management/CreateUser" class="btn btn-s-md btn-primary">회원 추가</a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </section>
+</section>

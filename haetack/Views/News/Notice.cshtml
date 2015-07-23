@@ -1,0 +1,97 @@
+﻿@model haetack.Views.News.NoticeViewModel
+@{
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+@section Style {
+    <link href="/Lib/css/news/notice/web.css" rel="stylesheet" />
+    <link href="/Lib/css/news/notice/mobile.css" rel="stylesheet" />
+}
+@section Script {
+    <script type="text/javascript">
+        var windowWidth = $(window).width();
+
+        if (windowWidth <= 600) {
+            $('.moreItem').width($('.team-grid').width() - 20);
+            $('.sample-img').height($('.team-item').width());
+
+        } else {
+            $('.moreItem').width($('.team-grid').width() - 20);
+        }
+    </script>
+}
+
+<!-- Home Section -->
+<section id="news" class="bg-dark-alfa-50 main-section page-section" data-background="/Lib/images/news/notice/bg_notice.png">
+    <div class="relative">
+        <div class="align-center">
+            <div class="main-title">
+                공지사항
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 공지사항 -->
+
+<section class="pressless-section page-section">
+    <div class="container relative">
+        <div class="team-grid">
+            @if (Model.Notices.RowCount == 0)
+            {
+                <div class="align-center no-item">
+                    <img src="/Lib/images/service/app/ready.png" />
+                </div>
+            }
+            else
+            {
+                foreach (var item in Model.Notices.Items)
+                {
+                    if (item.Id != 0)
+                    {
+                        <div class="team-item">
+                            <div class="team-item-image">
+                                <a href="/News/DetailNotice?id=@(item.Id)">
+                                    <img class="sample-img" src="/News/GetMainPicForNotice?id=@(item.Id)" />
+                                </a>
+                                <div class="team-item-detail">
+                                    <a class="hetekee-color" href="/News/DetailNotice?id=@(item.Id)">
+                                        <h4>@(item.Title)</h4>
+                                        @(item.SubContent)
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="team-item-descr">
+                                <div class="team-item-name">
+                                    <p class="align-left item-title hetekee-color">
+                                        <a class="hetekee-color" href="/News/DetailNotice?id=@(item.Id)">
+                                            @(item.Title)
+                                        </a>
+                                    </p>
+                                </div>
+                                <div class="team-item-date">
+                                    <p class="align-left item-date">
+                                        @(item.Updated.ToString("yyyy.MM.dd"))
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="team-item team-no-item">
+                        </div>
+                    }
+                }
+            }
+            
+            @if (Model.Notices.RowCount > Model.Notices.PerPage)
+            {
+                <div class="moreItem">
+                    <a href="/News/Notice?page=@(Model.Notices.Page)&perPage=@(Model.Notices.PerPage + 6)">
+                        <p>더 많은 정보 보기</p>
+                    </a>
+                </div>
+            }
+        </div>
+    </div>
+</section>

@@ -1,0 +1,260 @@
+﻿/* pad */
+@media only screen and (max-width: 1200px) and (min-width: 601px) {
+     .main-section {
+        padding: 200px 70px 110px 70px !important;
+    }
+
+    .main-title {
+        font-size: 300%;
+        color: #fff;
+        font-family: Moebius_Regular_kor;
+    }
+}
+@media only screen and (max-width: 600px) {
+        .main-section {
+        padding: 102px 70px 40px 70px !important;
+    }
+
+    .main-title {
+        font-size: 27px;
+        color: #fff;
+        font-family: Moebius_Regular_kor;
+    }
+
+    .detail-section {
+        padding: 80px 0px !important;
+    }
+    .news-date {
+        font-size: 20px;
+        color: #272727;
+        font-family: NotoSansCJKkr-Light !important;
+    }
+    .news-title {
+        font-size: 27px;
+        color: #272727;
+        font-family: NotoSansCJKkr-Medium !important;
+    }
+    .news-content {
+        margin-top: 30px;
+        font-family: NotoSansCJKkr-Light !important;
+    }
+
+    .pressless-writer-container {
+        padding-top: 15px !important;
+        padding-bottom: 15px !important;
+        border-top: 1px solid #e5e5e5;
+        border-bottom: 1px solid #e5e5e5;
+    }
+    .pressless-writer {
+        margin-bottom: 0 !important;
+    }
+    .pressless-writer li {
+        position: relative;
+    }
+    .pressless-writer-info {
+        height: 100%;
+        vertical-align: middle;
+        float: left;
+        margin-top: 12px;
+    }
+    .pressless-writer-image {
+        height: 75px !important;
+        width: 75px !important;
+        margin-top: 0px !important;
+    }
+    .pressless-write-name {
+        font-size: 16px;
+        font-family: Lato-Regular !important;
+        margin-left: 0px;
+    }
+    .pressless-write-name span {
+        font-size: 16px;
+        text-transform: none;
+        color: #000000;
+    }
+    .pressless-writer-role {
+        font-family: Lato-Regular !important;
+        padding-left: 0px;
+        font-size: 16px;
+        color: #0b0b0b;
+    }
+    .pressless-view-btn {
+        margin-top: 13px;
+        padding: 3% 4% !important;
+        font-size: 16px !important;
+        background: #3db39d !important;
+        border-color: #3db39d !important;
+        color: #fff !important;
+    }
+    .pressless-view-btn:hover {
+        background: #fff !important;
+        color: #3db39d !important;
+    }
+}
+
+/*iPhone 5 작은거*/ 
+@media screen and (device-aspect-ratio: 2/3) {
+      .main-section {
+        padding: 102px 70px 40px 70px !important;
+    }
+
+    .main-title {
+        font-size: 27px;
+        color: #fff;
+        font-family: Moebius_Regular_kor;
+    }
+
+    .detail-section {
+        padding: 80px 0px !important;
+    }
+    .news-date {
+        font-size: 20px;
+        color: #272727;
+        font-family: NotoSansCJKkr-Light !important;
+    }
+    .news-title {
+        font-size: 27px;
+        color: #272727;
+        font-family: NotoSansCJKkr-Medium !important;
+    }
+    .news-content {
+        margin-top: 30px;
+        font-family: NotoSansCJKkr-Light !important;
+    }
+
+    .pressless-writer-container {
+        padding-top: 15px !important;
+        padding-bottom: 15px !important;
+        border-top: 1px solid #b7b7b7;
+        border-bottom: 1px solid #b7b7b7;
+    }
+    .pressless-writer {
+        margin-bottom: 0 !important;
+    }
+    .pressless-writer li {
+        position: relative;
+    }
+    .pressless-writer-info {
+        height: 100%;
+        vertical-align: middle;
+        float: left;
+        margin-top: 12px;
+    }
+    .pressless-writer-image {
+        height: 75px;
+        width: 75px !important;
+        margin-top: 0px !important;
+    }
+    .pressless-write-name {
+        font-size: 16px;
+        font-family: Lato-Regular !important;
+        margin-left: 0px;
+    }
+    .pressless-write-name span {
+        font-size: 16px;
+        text-transform: none;
+        color: #000000;
+    }
+    .pressless-writer-role {
+        font-family: Lato-Regular !important;
+        padding-left: 0px;
+        font-size: 16px;
+        color: #0b0b0b;
+    }
+   .pressless-view-btn {
+        margin-top: 13px;
+        padding: 3% 4% !important;
+        font-size: 16px !important;
+        background: #3db39d !important;
+        border-color: #3db39d !important;
+        color: #fff !important;
+    }
+    .pressless-view-btn:hover {
+        background: #fff !important;
+        color: #3db39d !important;
+    }
+}
+
+/*iPhone 5 */
+@media screen and (device-aspect-ratio: 40/71) {
+        .main-section {
+        padding: 102px 70px 40px 70px !important;
+    }
+
+    .main-title {
+        font-size: 27px;
+        color: #fff;
+        font-family: Moebius_Regular_kor;
+    }
+
+    .detail-section {
+        padding: 80px 0px !important;
+    }
+    .news-date {
+        font-size: 20px;
+        color: #272727;
+        font-family: NotoSansCJKkr-Light !important;
+    }
+    .news-title {
+        font-size: 27px;
+        color: #272727;
+        font-family: NotoSansCJKkr-Medium !important;
+    }
+    .news-content {
+        margin-top: 30px;
+        font-family: NotoSansCJKkr-Light !important;
+    }
+
+    .pressless-writer-container {
+        padding-top: 15px !important;
+        padding-bottom: 15px !important;
+        border-top: 1px solid #b7b7b7;
+        border-bottom: 1px solid #b7b7b7;
+    }
+    .pressless-writer {
+        margin-bottom: 0 !important;
+    }
+    .pressless-writer li {
+        position: relative;
+    }
+    .pressless-writer-info {
+        height: 100%;
+        vertical-align: middle;
+        float: left;
+        margin-top: 12px;
+    }
+    .pressless-writer-image {
+        height: 75px;
+        width: 75px !important;
+        margin-top: 0px !important;
+    }
+    .pressless-write-name {
+        font-size: 16px;
+        font-family: Lato-Regular !important;
+        margin-left: 0px;
+    }
+    .pressless-write-name span {
+        font-size: 16px;
+        text-transform: none;
+        color: #000000;
+    }
+    .pressless-writer-role {
+        font-family: Lato-Regular !important;
+        padding-left: 0px;
+        font-size: 16px;
+        color: #0b0b0b;
+    }
+    .pressless-view-btn {
+        margin-top: 13px;
+        padding: 3% 4% !important;
+        font-size: 16px !important;
+        background: #3db39d !important;
+        border-color: #3db39d !important;
+        color: #fff !important;
+    }
+    .pressless-view-btn:hover {
+        background: #fff !important;
+        color: #3db39d !important;
+    }
+}
+

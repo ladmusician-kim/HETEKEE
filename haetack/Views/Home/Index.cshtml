@@ -1,0 +1,105 @@
+﻿@model haetack.Views.Home.HomeViewModel
+@{
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+@section Script {
+    <script src="/Lib/js/home/index.js"></script>
+    <script type="text/javascript">
+        var videoWidth = $('.hetekee-video').width();
+        var videoHeight = videoWidth * 620 / 995;
+        $('.hetekee-video').height(videoWidth * 620 / 995);
+    </script>
+}
+@section Style {
+    <link href="/Lib/css/home/web.css" rel="stylesheet" />
+    <link href="/Lib/css/home/mobile.css" rel="stylesheet" />
+}
+
+<!-- Home Section -->
+<section id="home" class="hetekee-page page-section" data-background="/Lib/images/home/bg_main.png">
+    <div class="container relative pt-40">
+        <div class="align-center">
+            <div class="hetekee-main-fullscreen-content col-sm-6 align-left animate-init" data-anim-type="fade-in-right" data-anim-delay="0">
+                <div class="hetekee-home-title">
+                    <p>카드에는</p>
+                    <p>"혜택이" 란게 있습니다</p>
+                </div>
+                <div class="hetekee-home-content">
+                    <p>찾지 못하고 누리지 못했던 카드 혜택들!</p>
+                    <p>혜성같이 등장한 혜택이 APP이 챙겨드릴게요!</p>
+                    <p class="more-description">(특허 & 상표권 등록)</p>
+                </div>
+                <div class="hetekee-googleplay">
+                    <a target="_blank" href="https://play.google.com/store/apps/details?id=kr.superstring.hetegi">
+                        <img style="width: 42%;" src="/Lib/images/home/btn_google.png" />
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6 align-left main-img-container" style="padding-left: 0px;">
+                <img class="main-img animate-init" data-anim-type="fade-in-up" data-anim-delay="0" src="/Lib/images/home/phon_main.png" />
+            </div>
+        </div>
+    </div>
+</section>
+
+ <!-- 혜택이 동영상1 TITLE -->
+<section class="hetekee-video-page page-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="hetekee-video-title align-center hetekee-color">
+                    혜택이 App 소개
+                </div>
+                <div class="hetekee-video-content hetekee-content-color align-center web-item">
+                    <p>신용카드 체크카드에는 혜택이 있죠! 나는 내가 받을 수 있는 카드혜택을 얼마나 챙겨가고 있습니까?</p>
+                    <p>혜택이가 내 지갑속 카드 혜택들을 지대로 찾아드리겠습니다 !</p>
+                </div>
+                <div class="hetekee-video-content hetekee-content-color align-center mobile-item">
+                    <p>신용카드 체크카드에는 혜택이 있죠! 나는 내가 받을 수 있는 카드혜택을 얼마나 챙겨가고 있습니까? 혜택이가 내 지갑속 카드 혜택들을 지대로 찾아드리겠습니다!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+ <!-- 혜택이 동영상1 CONTENT-->
+<section class="hetekee-video-content-page page-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 align-center hetekee-video-container" style="z-index:0">
+                @*<iframe class="hetekee-video" width="72%" height="620" style="z-index:0" src="https://www.youtube.com/embed/9hZJgRE_Nhw" frameborder="0" allowfullscreen></iframe>*@
+                <iframe class="hetekee-video" width="72%" height="620" style="z-index:0" src="https://www.youtube.com/embed/tck9i8rB3EE" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+ <!-- 혜택이 동영상2 TITLE -->
+<section class="hetekee-video-page page-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="hetekee-video-title align-center hetekee-color">
+                    대구를 만나다 - 은석훈 대표 소개
+                </div>
+                <div class="hetekee-video-content hetekee-content-color align-center web-item">
+                    <p>꿈꾸는 혁신가 은석훈 대표는 국민이 제대로 받지 못하고 놓치고 있는 혜택을</p>
+                    <p>찾아주는 핀테크 금융플랫폼 서비스를 개발중입니다.</p>
+                </div>
+                <div class="hetekee-video-content hetekee-content-color align-center mobile-item">
+                    <p>꿈꾸는 혁신가 은석훈 대표는 국민이 제대로 받지 못하고 놓치고 있는 혜택을 찾아주는 핀테크 금융플랫폼 서비스를 개발중입니다.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- 혜택이 동영상2 CONTENT-->
+<section class="hetekee-video-content-page page-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 align-center hetekee-video-container">
+                @*<iframe class="hetekee-video" width="72%" height="620" src="https://www.youtube.com/embed/9hZJgRE_Nhw" frameborder="0" allowfullscreen></iframe>*@
+                <iframe class="hetekee-video" width="72%" height="620" width="560" height="315" src="https://www.youtube.com/embed/O4u176PDn7E" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</section>

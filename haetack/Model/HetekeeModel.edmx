@@ -1,0 +1,417 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="HetekeeModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityType Name="Admin">
+          <Key>
+            <PropertyRef Name="_id" />
+          </Key>
+          <Property Name="_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="name" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="created" Type="date" Nullable="false" />
+          <Property Name="updated" Type="date" />
+          <Property Name="username" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="password" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="isdeprecated" Type="bit" Nullable="false" />
+          <Property Name="pic" Type="varbinary(max)" />
+          <Property Name="role" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Notice">
+          <Key>
+            <PropertyRef Name="_noticeid" />
+          </Key>
+          <Property Name="_noticeid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="title" Type="text" Nullable="false" />
+          <Property Name="content" Type="text" Nullable="false" />
+          <Property Name="subcontent" Type="text" Nullable="false" />
+          <Property Name="created" Type="date" Nullable="false" />
+          <Property Name="updated" Type="date" Nullable="false" />
+          <Property Name="hit" Type="int" />
+          <Property Name="isdeprecated" Type="bit" />
+          <Property Name="for_userid" Type="int" />
+        </EntityType>
+        <EntityType Name="NoticeImage">
+          <Key>
+            <PropertyRef Name="_noticeimageid" />
+          </Key>
+          <Property Name="_noticeimageid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="content" Type="varbinary(max)" Nullable="false" />
+        </EntityType>
+        <EntityType Name="NoticeToNoticeImage">
+          <Key>
+            <PropertyRef Name="for_noticeid" />
+            <PropertyRef Name="for_noticeimageid" />
+          </Key>
+          <Property Name="for_noticeid" Type="int" Nullable="false" />
+          <Property Name="for_noticeimageid" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Pressless">
+          <Key>
+            <PropertyRef Name="_presslessid" />
+          </Key>
+          <Property Name="_presslessid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="title" Type="text" Nullable="false" />
+          <Property Name="content" Type="text" Nullable="false" />
+          <Property Name="subcontent" Type="text" Nullable="false" />
+          <Property Name="created" Type="date" Nullable="false" />
+          <Property Name="updated" Type="date" Nullable="false" />
+          <Property Name="hit" Type="int" />
+          <Property Name="isdeprecated" Type="bit" />
+          <Property Name="for_userid" Type="int" />
+          <Property Name="presslessurl" Type="text" />
+        </EntityType>
+        <EntityType Name="PresslessImage">
+          <Key>
+            <PropertyRef Name="_presslessimageid" />
+          </Key>
+          <Property Name="_presslessimageid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="content" Type="varbinary(max)" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PresslessToPresslessImage">
+          <Key>
+            <PropertyRef Name="for_presslessid" />
+            <PropertyRef Name="for_presslessimageid" />
+          </Key>
+          <Property Name="for_presslessid" Type="int" Nullable="false" />
+          <Property Name="for_presslessimageid" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_Notice_NoticeToNoticeImage">
+          <End Role="Notice" Type="Self.Notice" Multiplicity="1" />
+          <End Role="NoticeToNoticeImage" Type="Self.NoticeToNoticeImage" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Notice">
+              <PropertyRef Name="_noticeid" />
+            </Principal>
+            <Dependent Role="NoticeToNoticeImage">
+              <PropertyRef Name="for_noticeid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Notice_User">
+          <End Role="Admin" Type="Self.Admin" Multiplicity="0..1" />
+          <End Role="Notice" Type="Self.Notice" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Admin">
+              <PropertyRef Name="_id" />
+            </Principal>
+            <Dependent Role="Notice">
+              <PropertyRef Name="for_userid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NoticeImage_NoticeToNoticeImage">
+          <End Role="NoticeImage" Type="Self.NoticeImage" Multiplicity="1" />
+          <End Role="NoticeToNoticeImage" Type="Self.NoticeToNoticeImage" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NoticeImage">
+              <PropertyRef Name="_noticeimageid" />
+            </Principal>
+            <Dependent Role="NoticeToNoticeImage">
+              <PropertyRef Name="for_noticeimageid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Pressless_PresslessToPresslessImage">
+          <End Role="Pressless" Type="Self.Pressless" Multiplicity="1" />
+          <End Role="PresslessToPresslessImage" Type="Self.PresslessToPresslessImage" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Pressless">
+              <PropertyRef Name="_presslessid" />
+            </Principal>
+            <Dependent Role="PresslessToPresslessImage">
+              <PropertyRef Name="for_presslessid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Pressless_User">
+          <End Role="Admin" Type="Self.Admin" Multiplicity="0..1" />
+          <End Role="Pressless" Type="Self.Pressless" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Admin">
+              <PropertyRef Name="_id" />
+            </Principal>
+            <Dependent Role="Pressless">
+              <PropertyRef Name="for_userid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PresslessImage_PresslessToPresslessImage">
+          <End Role="PresslessImage" Type="Self.PresslessImage" Multiplicity="1" />
+          <End Role="PresslessToPresslessImage" Type="Self.PresslessToPresslessImage" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PresslessImage">
+              <PropertyRef Name="_presslessimageid" />
+            </Principal>
+            <Dependent Role="PresslessToPresslessImage">
+              <PropertyRef Name="for_presslessimageid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="HetekeeModelStoreContainer">
+          <EntitySet Name="Admin" EntityType="Self.Admin" Schema="ladmusician01" store:Type="Tables" />
+          <EntitySet Name="Notice" EntityType="Self.Notice" Schema="ladmusician01" store:Type="Tables" />
+          <EntitySet Name="NoticeImage" EntityType="Self.NoticeImage" Schema="ladmusician01" store:Type="Tables" />
+          <EntitySet Name="NoticeToNoticeImage" EntityType="Self.NoticeToNoticeImage" Schema="ladmusician01" store:Type="Tables" />
+          <EntitySet Name="Pressless" EntityType="Self.Pressless" Schema="ladmusician01" store:Type="Tables" />
+          <EntitySet Name="PresslessImage" EntityType="Self.PresslessImage" Schema="ladmusician01" store:Type="Tables" />
+          <EntitySet Name="PresslessToPresslessImage" EntityType="Self.PresslessToPresslessImage" Schema="ladmusician01" store:Type="Tables" />
+          <AssociationSet Name="FK_Notice_NoticeToNoticeImage" Association="Self.FK_Notice_NoticeToNoticeImage">
+            <End Role="Notice" EntitySet="Notice" />
+            <End Role="NoticeToNoticeImage" EntitySet="NoticeToNoticeImage" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Notice_User" Association="Self.FK_Notice_User">
+            <End Role="Admin" EntitySet="Admin" />
+            <End Role="Notice" EntitySet="Notice" />
+          </AssociationSet>
+          <AssociationSet Name="FK_NoticeImage_NoticeToNoticeImage" Association="Self.FK_NoticeImage_NoticeToNoticeImage">
+            <End Role="NoticeImage" EntitySet="NoticeImage" />
+            <End Role="NoticeToNoticeImage" EntitySet="NoticeToNoticeImage" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Pressless_PresslessToPresslessImage" Association="Self.FK_Pressless_PresslessToPresslessImage">
+            <End Role="Pressless" EntitySet="Pressless" />
+            <End Role="PresslessToPresslessImage" EntitySet="PresslessToPresslessImage" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Pressless_User" Association="Self.FK_Pressless_User">
+            <End Role="Admin" EntitySet="Admin" />
+            <End Role="Pressless" EntitySet="Pressless" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PresslessImage_PresslessToPresslessImage" Association="Self.FK_PresslessImage_PresslessToPresslessImage">
+            <End Role="PresslessImage" EntitySet="PresslessImage" />
+            <End Role="PresslessToPresslessImage" EntitySet="PresslessToPresslessImage" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="HetekeeModel" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2008/09/edm" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+        <EntityContainer Name="HetekeeEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Admins" EntityType="HetekeeModel.Admin" />
+          <EntitySet Name="Notices" EntityType="HetekeeModel.Notice" />
+          <EntitySet Name="NoticeImages" EntityType="HetekeeModel.NoticeImage" />
+          <EntitySet Name="Presslesses" EntityType="HetekeeModel.Pressless" />
+          <EntitySet Name="PresslessImages" EntityType="HetekeeModel.PresslessImage" />
+          <AssociationSet Name="FK_Notice_User" Association="HetekeeModel.FK_Notice_User">
+            <End Role="Admin" EntitySet="Admins" />
+            <End Role="Notice" EntitySet="Notices" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Pressless_User" Association="HetekeeModel.FK_Pressless_User">
+            <End Role="Admin" EntitySet="Admins" />
+            <End Role="Pressless" EntitySet="Presslesses" />
+          </AssociationSet>
+          <AssociationSet Name="NoticeToNoticeImage" Association="HetekeeModel.NoticeToNoticeImage">
+            <End Role="Notice" EntitySet="Notices" />
+            <End Role="NoticeImage" EntitySet="NoticeImages" />
+          </AssociationSet>
+          <AssociationSet Name="PresslessToPresslessImage" Association="HetekeeModel.PresslessToPresslessImage">
+            <End Role="Pressless" EntitySet="Presslesses" />
+            <End Role="PresslessImage" EntitySet="PresslessImages" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Admin">
+          <Key>
+            <PropertyRef Name="C_id" />
+          </Key>
+          <Property Name="C_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="created" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="updated" Type="DateTime" Precision="0" />
+          <Property Name="username" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="password" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="isdeprecated" Type="Boolean" Nullable="false" />
+          <Property Name="pic" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="role" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Notices" Relationship="HetekeeModel.FK_Notice_User" FromRole="Admin" ToRole="Notice" />
+          <NavigationProperty Name="Presslesses" Relationship="HetekeeModel.FK_Pressless_User" FromRole="Admin" ToRole="Pressless" />
+        </EntityType>
+        <EntityType Name="Notice">
+          <Key>
+            <PropertyRef Name="C_noticeid" />
+          </Key>
+          <Property Name="C_noticeid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="title" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="content" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="subcontent" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="created" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="updated" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="hit" Type="Int32" />
+          <Property Name="isdeprecated" Type="Boolean" />
+          <Property Name="for_userid" Type="Int32" />
+          <NavigationProperty Name="Admin" Relationship="HetekeeModel.FK_Notice_User" FromRole="Notice" ToRole="Admin" />
+          <NavigationProperty Name="NoticeImages" Relationship="HetekeeModel.NoticeToNoticeImage" FromRole="Notice" ToRole="NoticeImage" />
+        </EntityType>
+        <EntityType Name="NoticeImage">
+          <Key>
+            <PropertyRef Name="C_noticeimageid" />
+          </Key>
+          <Property Name="C_noticeimageid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="content" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+          <NavigationProperty Name="Notices" Relationship="HetekeeModel.NoticeToNoticeImage" FromRole="NoticeImage" ToRole="Notice" />
+        </EntityType>
+        <EntityType Name="Pressless">
+          <Key>
+            <PropertyRef Name="C_presslessid" />
+          </Key>
+          <Property Name="C_presslessid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="title" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="content" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="subcontent" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="created" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="updated" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="hit" Type="Int32" />
+          <Property Name="isdeprecated" Type="Boolean" />
+          <Property Name="for_userid" Type="Int32" />
+          <Property Name="presslessurl" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Admin" Relationship="HetekeeModel.FK_Pressless_User" FromRole="Pressless" ToRole="Admin" />
+          <NavigationProperty Name="PresslessImages" Relationship="HetekeeModel.PresslessToPresslessImage" FromRole="Pressless" ToRole="PresslessImage" />
+        </EntityType>
+        <EntityType Name="PresslessImage">
+          <Key>
+            <PropertyRef Name="C_presslessimageid" />
+          </Key>
+          <Property Name="C_presslessimageid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="content" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+          <NavigationProperty Name="Presslesses" Relationship="HetekeeModel.PresslessToPresslessImage" FromRole="PresslessImage" ToRole="Pressless" />
+        </EntityType>
+        <Association Name="FK_Notice_User">
+          <End Type="HetekeeModel.Admin" Role="Admin" Multiplicity="0..1" />
+          <End Type="HetekeeModel.Notice" Role="Notice" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Admin">
+              <PropertyRef Name="C_id" />
+            </Principal>
+            <Dependent Role="Notice">
+              <PropertyRef Name="for_userid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Pressless_User">
+          <End Type="HetekeeModel.Admin" Role="Admin" Multiplicity="0..1" />
+          <End Type="HetekeeModel.Pressless" Role="Pressless" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Admin">
+              <PropertyRef Name="C_id" />
+            </Principal>
+            <Dependent Role="Pressless">
+              <PropertyRef Name="for_userid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="NoticeToNoticeImage">
+          <End Type="HetekeeModel.Notice" Role="Notice" Multiplicity="*" />
+          <End Type="HetekeeModel.NoticeImage" Role="NoticeImage" Multiplicity="*" />
+        </Association>
+        <Association Name="PresslessToPresslessImage">
+          <End Type="HetekeeModel.Pressless" Role="Pressless" Multiplicity="*" />
+          <End Type="HetekeeModel.PresslessImage" Role="PresslessImage" Multiplicity="*" />
+        </Association>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="HetekeeModelStoreContainer" CdmEntityContainer="HetekeeEntities">
+          <EntitySetMapping Name="Admins">
+            <EntityTypeMapping TypeName="HetekeeModel.Admin">
+              <MappingFragment StoreEntitySet="Admin">
+                <ScalarProperty Name="role" ColumnName="role" />
+                <ScalarProperty Name="pic" ColumnName="pic" />
+                <ScalarProperty Name="isdeprecated" ColumnName="isdeprecated" />
+                <ScalarProperty Name="password" ColumnName="password" />
+                <ScalarProperty Name="username" ColumnName="username" />
+                <ScalarProperty Name="updated" ColumnName="updated" />
+                <ScalarProperty Name="created" ColumnName="created" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="C_id" ColumnName="_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Notices">
+            <EntityTypeMapping TypeName="HetekeeModel.Notice">
+              <MappingFragment StoreEntitySet="Notice">
+                <ScalarProperty Name="for_userid" ColumnName="for_userid" />
+                <ScalarProperty Name="isdeprecated" ColumnName="isdeprecated" />
+                <ScalarProperty Name="hit" ColumnName="hit" />
+                <ScalarProperty Name="updated" ColumnName="updated" />
+                <ScalarProperty Name="created" ColumnName="created" />
+                <ScalarProperty Name="subcontent" ColumnName="subcontent" />
+                <ScalarProperty Name="content" ColumnName="content" />
+                <ScalarProperty Name="title" ColumnName="title" />
+                <ScalarProperty Name="C_noticeid" ColumnName="_noticeid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="NoticeImages">
+            <EntityTypeMapping TypeName="HetekeeModel.NoticeImage">
+              <MappingFragment StoreEntitySet="NoticeImage">
+                <ScalarProperty Name="content" ColumnName="content" />
+                <ScalarProperty Name="C_noticeimageid" ColumnName="_noticeimageid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Presslesses">
+            <EntityTypeMapping TypeName="HetekeeModel.Pressless">
+              <MappingFragment StoreEntitySet="Pressless">
+                <ScalarProperty Name="presslessurl" ColumnName="presslessurl" />
+                <ScalarProperty Name="for_userid" ColumnName="for_userid" />
+                <ScalarProperty Name="isdeprecated" ColumnName="isdeprecated" />
+                <ScalarProperty Name="hit" ColumnName="hit" />
+                <ScalarProperty Name="updated" ColumnName="updated" />
+                <ScalarProperty Name="created" ColumnName="created" />
+                <ScalarProperty Name="subcontent" ColumnName="subcontent" />
+                <ScalarProperty Name="content" ColumnName="content" />
+                <ScalarProperty Name="title" ColumnName="title" />
+                <ScalarProperty Name="C_presslessid" ColumnName="_presslessid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PresslessImages">
+            <EntityTypeMapping TypeName="HetekeeModel.PresslessImage">
+              <MappingFragment StoreEntitySet="PresslessImage">
+                <ScalarProperty Name="content" ColumnName="content" />
+                <ScalarProperty Name="C_presslessimageid" ColumnName="_presslessimageid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="NoticeToNoticeImage" TypeName="HetekeeModel.NoticeToNoticeImage" StoreEntitySet="NoticeToNoticeImage">
+            <EndProperty Name="NoticeImage">
+              <ScalarProperty Name="C_noticeimageid" ColumnName="for_noticeimageid" />
+            </EndProperty>
+            <EndProperty Name="Notice">
+              <ScalarProperty Name="C_noticeid" ColumnName="for_noticeid" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="PresslessToPresslessImage" TypeName="HetekeeModel.PresslessToPresslessImage" StoreEntitySet="PresslessToPresslessImage">
+            <EndProperty Name="PresslessImage">
+              <ScalarProperty Name="C_presslessimageid" ColumnName="for_presslessimageid" />
+            </EndProperty>
+            <EndProperty Name="Pressless">
+              <ScalarProperty Name="C_presslessid" ColumnName="for_presslessid" />
+            </EndProperty>
+          </AssociationSetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="없음" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams />
+  </Designer>
+</edmx:Edmx>

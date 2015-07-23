@@ -1,0 +1,65 @@
+﻿@media only screen and (min-width: 600px) {
+    .main-section {
+        padding: 210px 120px 120px 120px !important;
+        background-position-y:60px;
+    }
+
+    .main-title {
+        font-size: 62px;
+        color: #fff;
+        font-family: Moebius_Regular_kor;
+    }
+
+    .team-section {
+        padding: 130px 0 !important;
+    }
+
+    .team-title {
+        font-size: 41px;
+        font-family: Moebius_Regular_kor !important;
+    }
+    .team-line {
+        margin-top: 30px;
+        margin-bottom: 90px;
+        width: 33%;
+    }
+
+    .team-content {
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+
+    .team-content p {
+        font-size: 23px;
+        margin-bottom: 5px;
+        font-family: NotoSansCJKkr-Regular !important;
+    }
+
+
+
+    .right-panel {
+            padding-left: 70px;
+    }
+    .left-panel {
+            padding-right: 70px;
+    }
+    .member-item img {
+        width: 80%;
+    }
+
+    .member-name {
+        font-size: 24px;
+        font-family: NotoSansCJKkr-Medium !important;
+        margin-top: 17px;
+        font-weight: bold;
+    }
+    .member-name-eng {
+        font-size: 18px;
+        font-family: Lato-Regular !important;
+    }
+    .member-content {
+        font-size: 18px;
+        font-family: Lato-Thin !important;
+        margin-bottom: 80px;
+    }
+}

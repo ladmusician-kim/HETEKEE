@@ -1,0 +1,241 @@
+﻿@{
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+@section Script {
+    <script src="/Lib/js/service/app.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var fullScreenPaddingBottom = $("#service").css('padding-bottom');
+            var fullScreenPaddingTop = parseInt(fullScreenPaddingBottom.replace('px', '')) + 80;
+            $($('#service')[0]).css('padding-top', fullScreenPaddingTop + 'px');
+
+            // ready background
+            var sectionPaddingTop = getOnlyVal($('.my-card').css('padding-top'));
+            $('.hetekee-left-bg').css('left', sectionPaddingTop + 'px');
+            $('.hetekee-right-bg').css('right', sectionPaddingTop + 'px');
+
+            
+
+            function getOnlyVal(stringVal) {
+                return parseInt(stringVal.replace('px', ''));
+            }
+
+            $(window).load(function () {
+                var windowWidth = $(window).width();
+                var imgWidth = $('.hetekee-center-bg').width();
+                console.log(imgWidth);
+                $('.hetekee-center-bg').css('left', windowWidth / 2 - imgWidth / 2 + "px");
+            });
+        });
+        
+    </script>
+}
+@section Style {
+    <link href="/Lib/css/service/web-app.css" rel="stylesheet" />
+    <link href="/Lib/css/service/mobile-app.css" rel="stylesheet" />
+}
+<!-- APP 메인 -->
+<section id="service" class="hetekee-service-main page-section" data-background="/Lib/images/service/app/bg_app.png">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 align-right main-left-img-panel">
+                <img class="animate-init hetekee-app-main-img" src="/Lib/images/service/app/app_phon_1.gif" data-anim-type="fade-in-right" data-anim-delay="0" />
+            </div>
+            <div class="col-sm-6 align-left right-content animate-in" data-anim-type="fade-in-left" data-anim-delay="0">
+                <div class="hetekee-app-title hetekee-color">
+                    혜택이앱
+                </div>
+                <div class="hetekee-app-content hetekee-content-color">
+                    <p>혜택이의 4가지 기능!</p>
+                    <p>내 카드혜택 확인하는 재미를 느껴보세요.</p>
+                </div>
+                <div class="hetekee-app-sub-content">
+                    <div class="row">
+                        <div class="hetekee-app-sub-content-layout col-sm-2 align-center">
+                            <img src="/Lib/images/service/app/app_icon_1.png" />
+                            <div class="hetekee-app-sub-content-subscription hetekee-content-color">
+                                혜택지도
+                            </div>
+                        </div>
+                        <div class="hetekee-app-sub-content-layout col-sm-2 align-center">
+                            <img src="/Lib/images/service/app/app_icon_2.png" />
+                            <div class="hetekee-app-sub-content-subscription hetekee-content-color">
+                                혜택텍스트
+                            </div>
+                        </div>
+                        <div class="hetekee-app-sub-content-layout col-sm-2 align-center">
+                            <img src="/Lib/images/service/app/app_icon_3.png" />
+                            <div class="hetekee-app-sub-content-subscription hetekee-content-color">
+                                가계부
+                            </div>
+                        </div>
+                        <div class="hetekee-app-sub-content-layout col-sm-2 align-center">
+                            <img src="/Lib/images/service/app/app_icon_4.png" />
+                            <div class="hetekee-app-sub-content-subscription hetekee-content-color">
+                                Good night
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 혜택이 궁금한 내 카드 선택 -->
+<section class="hetekee-service-section my-card page-section">
+    <img class="hetekee-left-bg hetekee-bg-ready" src="/Lib/images/service/app/app_ready.png" />
+    <div class="container">
+        <div class="row">
+            <div class="hetekee-my-card-content col-sm-6 align-left animate-in" data-anim-type="fade-in-right" data-anim-delay="0">
+                <div class="hetekee-app-content-title hetekee-color">
+                    혜택이 궁금한 내 카드 선택
+                </div>
+                <div class="hetekee-color">
+                    <img class="hetekee-dot" src="/Lib/images/service/app/app_icon_circle.png" />
+                </div>
+                <div class="hetekee-app-content-description hetekee-app-content-description hetekee-content-color">
+                    <p>카드 등록은 SO SIMPLE!</p>
+                    <p>내 지갑 속 카드들 선택만 해주면 끝!</p>
+                    <p class="hetekee-function">Main Function: 언제든지 카드 추가 삭제 기능</p>
+                </div>
+            </div>
+            <div class="col-sm-6 align-center">
+                <img class="hetekee-app-img animate-in" data-anim-type="fade-in-left" data-anim-delay="0" src="/Lib/images/service/app/app_phon_2.png" />
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 혜택 지도 -->
+<section class="hetekee-service-section map page-section">
+    <img class="hetekee-right-bg hetekee-bg-right-num" src="/Lib/images/service/app/app_1.png" />
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 align-right left-img-panel">
+                <img class="hetekee-app-img map-img animate-in" data-anim-type="fade-in-right" data-anim-delay="0" src="/Lib/images/service/app/app_phon_3.png" />
+            </div>
+            <div class="col-sm-6 align-left animate-in" data-anim-type="fade-in-left" data-anim-delay="0">
+                <div class="hetekee-app-content-title hetekee-color">
+                    혜택 지도
+                </div>
+                <div class="hetekee-color">
+                    <img class="hetekee-dot" src="/Lib/images/service/app/app_icon_circle.png" />
+                </div>
+                <div class="hetekee-app-content-description hetekee-content-color">
+                    <p>내 카드 혜택 받을 수 있는 가맹점은 어디에있을까?</p>
+                    <p>'혜택지도'가 숨어있는 혜택 가맹점들 찾아드려요!</p>
+                    <p class="hetekee-function">Main Function: 혜택 가맹점 정보 + 카드 혜택 정보</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 혜택 텍스트 -->
+<section class="hetekee-service-section text page-section">
+    <img class="hetekee-left-bg hetekee-bg-left-num" src="/Lib/images/service/app/app_2.png" />
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-offset-1 col-sm-6 align-left left-content-panel animate-in" data-anim-type="fade-in-right" data-anim-delay="0">
+                <div class="hetekee-app-content-title hetekee-color">
+                    혜택이 텍스트
+                </div>
+                <div class="hetekee-color">
+                    <img class="hetekee-dot" src="/Lib/images/service/app/app_icon_circle.png" />
+                </div>
+                <div class="hetekee-app-content-description hetekee-content-color">
+                    <p>내 카드 혜택들 한눈에 보기 쉽게 확인 할 수 없을까?</p>
+                    <p>'혜택텍스트'가 카테고리별로 자동분류 해서 보여드려요!</p>
+                    <p class="hetekee-function">Main Function:</p>
+                    <p class="hetekee-function" style="margin-top: 0px !important;">카테고리별 혜택정보 + 가맹점 지도보기 연결</p>
+                </div>
+            </div>
+            <div class="col-sm-5 align-left text-right-panel">
+                <img class="hetekee-app-img text-img animate-in" data-anim-type="fade-in-left" data-anim-delay="0" src="/Lib/images/service/app/app_phon_4.png" />
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 혜택 가계부 -->
+<section class="hetekee-service-section account page-section">
+    <img class="hetekee-right-bg hetekee-bg-right-num" src="/Lib/images/service/app/app_3.png" />
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-7 align-center">
+                <img class="account-img animate-in" data-anim-type="fade-in-right" data-anim-delay="0" src="/Lib/images/service/app/app_phon_5.png" />
+            </div>
+            <div class="col-sm-5 hetekee-right-panel align-left animate-in" data-anim-type="fade-in-left" data-anim-delay="0">
+                <div class="hetekee-app-content-title hetekee-color">
+                    가계부
+                </div>
+                <div class="hetekee-color">
+                    <img class="hetekee-dot" src="/Lib/images/service/app/app_icon_circle.png" />
+                </div>
+                <div class="hetekee-app-content-description hetekee-content-color">
+                    <p>신용카드, 체크카드 상관없이!</p>
+                    <p>내 지갑 속 카드들 통합관리 해드려요.</p>
+                    <p class="hetekee-function">Main Function:</p>
+                    <p class="hetekee-function" style="letter-spacing: -2.8px;">지출내역 자동정리 + 카드 별 실적당성 금액 상태 확인</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- GOOD NIGHT -->
+<section class="hetekee-service-section goodnight page-section">
+    <img class="hetekee-left-bg hetekee-bg-left-num" src="/Lib/images/service/app/app_4.png" />
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-1 align-left left-content-panel animate-in" data-anim-type="fade-in-right" data-anim-delay="0">
+                <div class="hetekee-app-content-title hetekee-color">
+                    Good Night
+                </div>
+                <div class="hetekee-color">
+                    <img class="hetekee-dot" src="/Lib/images/service/app/app_icon_circle.png" />
+                </div>
+                <div class="hetekee-app-content-description hetekee-content-color">
+                    <p>"Good Night"에서는 매일밤 혜택이가 보내주는</p>
+                    <p>하루 지출 알림 메시지를 한달 동안 보관해드려요.</p>
+                    <p class="hetekee-function">Main Function: 일일 지출 금액만 간단하게 확인</p>
+                </div>
+            </div>
+            <div class="col-sm-5 align-left right-img-panel">
+                <img class="goodnight-img animate-in" data-anim-type="fade-in-left" data-anim-delay="0" src="/Lib/images/service/app/app_phon_6.png" />
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- last -->
+<section class="hetekee-service-section last page-section">
+    <img class="hetekee-center-bg" src="/Lib/images/service/app/app_plus.png" />
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 align-center">
+                <img class="last-img animate-in" data-anim-type="fade-in-up" data-anim-delay="0" src="/Lib/images/service/app/app_phon_7.png" />
+                <div class="hetekee-service-last-title hetekee-color">
+                    <p>Good Night</p>
+                    <p>Push Message</p>
+                </div>
+                <div class="hetekee-service-last-content hetekee-content-color">
+                    <p>매일 밤 하루 소비 금액 정리해서</p>
+                    <p>감성적인 이미지와 함께 전달해드려요.</p>
+                </div>
+            </div>
+            <div class="col-sm-6 align-center">
+                <img class="last-img animate-in" data-anim-type="fade-in-up" data-anim-delay="0" src="/Lib/images/service/app/app_phon_8.png" />
+                <div class="hetekee-service-last-title hetekee-color">
+                    <p>실적 달성</p>
+                    <p>Push Message</p>
+                </div>
+                <div class="hetekee-service-last-content hetekee-content-color">
+                    <p>한 카드 실적당설 할당량을 채우면</p>
+                    <p>다른 카드 실적 달성 할 수 있도록 알려드려요.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

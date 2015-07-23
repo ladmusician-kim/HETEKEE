@@ -1,0 +1,646 @@
+﻿/* pad */
+@media only screen and (max-width: 1200px) and (min-width: 600px) {
+ .container {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .hetekee-service-main {
+        padding-top: 120px !important;
+        padding-bottom: 30px !important;
+        padding-left: 10px;
+        padding-right: 10px;
+        background: none !important;
+    }
+
+    .hetekee-app-img {
+        width: 43%;
+    }
+
+    .hetekee-app-title {
+        margin-top: 15%;
+        font-size: 300%;
+        font-family: Moebius_Regular_kor !important;
+        margin-bottom: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .hetekee-app-content p {
+        font-size: 150%;
+        font-family: NotoSansCJKkr-Regular !important;
+        padding-bottom: 2px;
+        text-align: center;
+    }
+
+    .hetekee-app-sub-content {
+        margin-top: 10px;
+        padding-left: 18px !important;
+        padding-right: 18px !important;
+    }
+
+    .hetekee-app-sub-content img {
+        width: 61%;
+        margin-top: 10px
+    }
+
+    .hetekee-app-sub-content-layout {
+        width: 25% !important;
+        float: left;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .hetekee-app-sub-content-layout img {
+        width: 60%;
+    }
+
+    .hetekee-app-sub-content-subscription {
+        font-size: 110%;
+        font-family: NotoSansCJKkr-Medium !important;
+        font-weight: 300 !important;
+        margin-top: 5px;
+        letter-spacing: -0.5px;
+    }
+
+
+
+
+
+    /* content common */
+    .hetekee-service-section {
+        padding:30px 10px 30px 10px;
+    }
+
+    .hetekee-app-content-title {
+         font-size: 280%;
+        font-family: Moebius_Regular_kor !important;
+        margin-bottom: 10px;
+        margin-top: 15%;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .hetekee-app-content-description {
+        margin-top: 16px;
+    }
+
+    .hetekee-app-content-description p {
+        font-size: 123%;
+        font-family: NotoSansCJKkr-Medium !important;
+        padding-bottom: 2px;
+    }
+
+    .function {
+        margin-top: 15px !important;
+    }
+    .hetekee-function {
+        color: #f26547;
+    }
+
+    .hetekee-dot {
+        width: 11%;
+    }
+
+
+
+
+    /* 내 카드 선택 */
+    .my-card {
+        background: #f3f3f3;
+    }
+    .hetekee-my-card-content {
+        /*padding-left: 60px;*/
+    }
+
+
+    /* 혜택 지도*/
+    .map img.map-img {
+        padding-left: 15px;
+        width: 70%
+    }
+    .map .hetekee-app-content-title {
+        margin-top: 40%
+    }
+    .map .hetekee-app-content-description p {
+        letter-spacing: -1px;
+    }
+    /* 혜택 텍스트*/
+    .text {
+        background: #f3f3f3;
+    }
+    .text .hetekee-app-content-title {
+        margin-top: 34%
+    }
+    .text img.text-img {
+        padding-left: 41px;
+        width: 84%
+    }
+    .text .hetekee-app-content-description p {
+        letter-spacing: -1px;
+    }
+
+    /* 혜택 가계부 */
+    .account .account-img{
+        width: 85%;
+    }
+    .account .hetekee-app-content-title {
+        margin-top: 22%;
+    }
+
+    /* GOOD NIGHT */
+    .goodnight {
+        background: #f3f3f3;
+    }
+    .goodnight .hetekee-app-content-title {
+        margin-top: 23%;
+    }
+   .goodnight .goodnight-img {
+       width: 80%
+   }
+
+    /* Last */
+    .push {
+
+    }
+
+    .message {
+        background: #f3f3f3;
+    }    
+}
+@media only screen and (max-width: 600px) {
+     .container {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .hetekee-service-main {
+        padding-top: 90px !important;
+        padding-bottom: 30px !important;
+        padding-left: 10px;
+        padding-right: 10px;
+        background: none !important;
+    }
+
+    .hetekee-app-img {
+        width: 60%;
+    }
+
+    .hetekee-app-title {
+        font-size: 24px;
+        font-family: Moebius_Regular_kor !important;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .hetekee-app-content p {
+        font-size: 13px;
+        font-family: NotoSansCJKkr-Regular !important;
+        padding-bottom: 2px;
+        text-align: center;
+    }
+
+    .hetekee-app-sub-content {
+        margin-top: 10px;
+        padding-left: 18px !important;
+        padding-right: 18px !important;
+    }
+
+    .hetekee-app-sub-content img {
+        width: 61%;
+        margin-top: 10px
+    }
+
+    .hetekee-app-sub-content-layout {
+        width: 25% !important;
+        float: left;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .hetekee-app-sub-content-layout img {
+        width: 60%;
+    }
+
+    .hetekee-app-sub-content-subscription {
+        font-size: 11px;
+        font-family: NotoSansCJKkr-Medium !important;
+        font-weight: 300 !important;
+        margin-top: 5px;
+        letter-spacing: -0.5px;
+    }
+
+
+
+
+
+    /* content common */
+    .hetekee-service-section {
+        padding:30px 10px 30px 10px;
+    }
+
+    .hetekee-app-content-title {
+         font-size: 24px;
+        font-family: Moebius_Regular_kor !important;
+        margin-bottom: 10px;
+        margin-top: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .hetekee-app-content-description {
+        margin-top: 16px;
+    }
+
+    .hetekee-app-content-description p {
+        font-size: 13px;
+        font-family: NotoSansCJKkr-Medium !important;
+        padding-bottom: 2px;
+    }
+
+    .function {
+        margin-top: 15px !important;
+    }
+    .hetekee-function {
+        color: #f26547;
+    }
+
+    .hetekee-dot {
+        width: 11%;
+    }
+
+
+
+
+    /* 내 카드 선택 */
+    .my-card {
+        background: #f3f3f3;
+    }
+    .hetekee-my-card-content {
+        /*padding-left: 60px;*/
+    }
+
+
+    /* 혜택 지도*/
+    .map img.map-img {
+        padding-left: 15px;
+        width: 70%
+    }
+    .map .hetekee-app-content-description p {
+        letter-spacing: -1px;
+    }
+    /* 혜택 텍스트*/
+    .text {
+        background: #f3f3f3;
+    }
+    .text img.text-img {
+        padding-left: 41px;
+        width: 84%
+    }
+    .text .hetekee-app-content-description p {
+        letter-spacing: -1px;
+    }
+
+    /* 혜택 가계부 */
+    .account .account-img{
+        width: 85%;
+    }
+
+    /* GOOD NIGHT */
+    .goodnight {
+        background: #f3f3f3;
+    }
+   .goodnight .goodnight-img {
+       width: 80%
+   }
+
+    /* Last */
+    .push {
+
+    }
+
+    .message {
+        background: #f3f3f3;
+    }
+}
+
+/*iPhone 5 작은거*/ 
+@media screen and (device-aspect-ratio: 2/3) {
+     .container {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .hetekee-service-main {
+        padding-top: 90px !important;
+        padding-bottom: 30px !important;
+        padding-left: 10px;
+        padding-right: 10px;
+        background: none !important;
+    }
+
+    .hetekee-app-img {
+        width: 60%;
+    }
+
+    .hetekee-app-title {
+        font-size: 24px;
+        font-family: Moebius_Regular_kor !important;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .hetekee-app-content p {
+        font-size: 13px;
+        font-family: NotoSansCJKkr-Regular !important;
+        padding-bottom: 2px;
+        text-align: center;
+    }
+
+    .hetekee-app-sub-content {
+        margin-top: 10px;
+        padding-left: 18px !important;
+        padding-right: 18px !important;
+    }
+
+    .hetekee-app-sub-content img {
+        width: 61%;
+        margin-top: 10px
+    }
+
+    .hetekee-app-sub-content-layout {
+        width: 25% !important;
+        float: left;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .hetekee-app-sub-content-layout img {
+        width: 60%;
+    }
+
+    .hetekee-app-sub-content-subscription {
+        font-size: 11px;
+        font-family: NotoSansCJKkr-Medium !important;
+        font-weight: 300 !important;
+        margin-top: 5px;
+        letter-spacing: -0.5px;
+    }
+
+
+
+
+
+    /* content common */
+    .hetekee-service-section {
+        padding:30px 10px 30px 10px;
+    }
+
+    .hetekee-app-content-title {
+         font-size: 24px;
+        font-family: Moebius_Regular_kor !important;
+        margin-bottom: 10px;
+        margin-top: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .hetekee-app-content-description {
+        margin-top: 16px;
+    }
+
+    .hetekee-app-content-description p {
+        font-size: 13px;
+        font-family: NotoSansCJKkr-Medium !important;
+        padding-bottom: 2px;
+    }
+
+    .function {
+        margin-top: 15px !important;
+    }
+    .hetekee-function {
+        color: #f26547;
+    }
+
+    .hetekee-dot {
+        width: 11%;
+    }
+
+
+
+
+    /* 내 카드 선택 */
+    .my-card {
+        background: #f3f3f3;
+    }
+    .hetekee-my-card-content {
+        /*padding-left: 60px;*/
+    }
+
+
+    /* 혜택 지도*/
+    .map img.map-img {
+        padding-left: 15px;
+        width: 70%
+    }
+    .map .hetekee-app-content-description p {
+        letter-spacing: -1px;
+    }
+    /* 혜택 텍스트*/
+    .text {
+        background: #f3f3f3;
+    }
+    .text img.text-img {
+        padding-left: 41px;
+        width: 84%
+    }
+    .text .hetekee-app-content-description p {
+        letter-spacing: -1px;
+    }
+
+    /* 혜택 가계부 */
+    .account .account-img{
+        width: 85%;
+    }
+
+    /* GOOD NIGHT */
+    .goodnight {
+        background: #f3f3f3;
+    }
+   .goodnight .goodnight-img {
+       width: 80%
+   }
+
+    /* Last */
+    .push {
+
+    }
+
+    .message {
+        background: #f3f3f3;
+    }
+}
+
+/*iPhone 5 */
+@media screen and (device-aspect-ratio: 40/71) {
+     .container {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .hetekee-service-main {
+        padding-top: 90px !important;
+        padding-bottom: 30px !important;
+        padding-left: 10px;
+        padding-right: 10px;
+        background: none !important;
+    }
+
+    .hetekee-app-img {
+        width: 60%;
+    }
+
+    .hetekee-app-title {
+        font-size: 24px;
+        font-family: Moebius_Regular_kor !important;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .hetekee-app-content p {
+        font-size: 13px;
+        font-family: NotoSansCJKkr-Regular !important;
+        padding-bottom: 2px;
+        text-align: center;
+    }
+
+    .hetekee-app-sub-content {
+        margin-top: 10px;
+        padding-left: 18px !important;
+        padding-right: 18px !important;
+    }
+
+    .hetekee-app-sub-content img {
+        width: 61%;
+        margin-top: 10px
+    }
+
+    .hetekee-app-sub-content-layout {
+        width: 25% !important;
+        float: left;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .hetekee-app-sub-content-layout img {
+        width: 60%;
+    }
+
+    .hetekee-app-sub-content-subscription {
+        font-size: 11px;
+        font-family: NotoSansCJKkr-Medium !important;
+        font-weight: 300 !important;
+        margin-top: 5px;
+        letter-spacing: -0.5px;
+    }
+
+
+
+
+
+    /* content common */
+    .hetekee-service-section {
+        padding:30px 10px 30px 10px;
+    }
+
+    .hetekee-app-content-title {
+         font-size: 24px;
+        font-family: Moebius_Regular_kor !important;
+        margin-bottom: 10px;
+        margin-top: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .hetekee-app-content-description {
+        margin-top: 16px;
+    }
+
+    .hetekee-app-content-description p {
+        font-size: 13px;
+        font-family: NotoSansCJKkr-Medium !important;
+        padding-bottom: 2px;
+    }
+
+    .function {
+        margin-top: 15px !important;
+    }
+    .hetekee-function {
+        color: #f26547;
+    }
+
+    .hetekee-dot {
+        width: 11%;
+    }
+
+
+
+
+    /* 내 카드 선택 */
+    .my-card {
+        background: #f3f3f3;
+    }
+    .hetekee-my-card-content {
+        /*padding-left: 60px;*/
+    }
+
+
+    /* 혜택 지도*/
+    .map img.map-img {
+        padding-left: 15px;
+        width: 70%
+    }
+    .map .hetekee-app-content-description p {
+        letter-spacing: -1px;
+    }
+    /* 혜택 텍스트*/
+    .text {
+        background: #f3f3f3;
+    }
+    .text img.text-img {
+        padding-left: 41px;
+        width: 84%
+    }
+    .text .hetekee-app-content-description p {
+        letter-spacing: -1px;
+    }
+
+    /* 혜택 가계부 */
+    .account .account-img{
+        width: 85%;
+    }
+
+    /* GOOD NIGHT */
+    .goodnight {
+        background: #f3f3f3;
+    }
+   .goodnight .goodnight-img {
+       width: 80%
+   }
+
+    /* Last */
+    .push {
+
+    }
+
+    .message {
+        background: #f3f3f3;
+    }
+}
+

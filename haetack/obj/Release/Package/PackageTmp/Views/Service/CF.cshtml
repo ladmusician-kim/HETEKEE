@@ -1,0 +1,42 @@
+﻿@{
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+@section Script {
+    <script src="/Lib/js/service/cf.js"></script>
+    <script type="text/javascript">
+        var videoWidth = $('.hetekee-video').width();
+        var videoHeight = videoWidth * 620 / 995;
+        $('.hetekee-video').height(videoWidth * 620 / 995);
+    </script>
+
+}
+@section Style {
+    <link href="/Lib/css/service/web-cf.css" rel="stylesheet" />
+    <link href="/Lib/css/service/mobile-cf.css" rel="stylesheet" />
+}
+<!-- Home Section -->
+<section id="service" class="bg-dark-alfa-50 main-section page-section" 
+         data-background="/Lib/images/service/cf/bg_cf.png">
+    <div class="relative">
+        <div class="align-center">
+            <div class="main-title">
+                혜택이CF
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- 혜택이 동영상1 TITLE -->
+<section class="cf-section page-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="align-center no-item">
+                    <img src="/Lib/images/service/app/ready.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

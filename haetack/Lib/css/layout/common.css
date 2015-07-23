@@ -1,0 +1,82 @@
+﻿@font-face {
+    font-family: 'Moebius_Bold_kor';
+    src: url('/Lib/fonts/Moebius_Bold_kor.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Moebius_Regular_kor';
+    src: url('/Lib/fonts/Moebius_Regular_kor.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'NotoSans-Bold';
+    src: url('/Lib/fonts/NotoSans-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'NotoSans-Regular';
+    src: url('/Lib/fonts/NotoSans-Regular.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'NotoSansCJKkr-Black';
+    src: url('../../fonts/NotoSansCJKkr-Black.otf') format('opentype');
+}
+@font-face {
+    font-family: 'NotoSansCJKkr-Bold';
+    src: url('../../fonts/NotoSansCJKkr-Bold.otf') format('opentype');
+}
+@font-face {
+    font-family: 'NotoSansCJKkr-DemiLight';
+    src: url('../../fonts/NotoSansCJKkr-DemiLight.otf') format('opentype');
+}
+@font-face {
+    font-family: 'NotoSansCJKkr-Light';
+    src: url('../../fonts/NotoSansCJKkr-Light.otf') format('opentype');
+}
+@font-face {
+    font-family: 'NotoSansCJKkr-Medium';
+    src: url('../../fonts/NotoSansCJKkr-Medium.otf') format('opentype');
+}
+@font-face {
+    font-family: 'NotoSansCJKkr-Regular';
+    src: url('../../fonts/NotoSansCJKkr-Regular.otf') format('opentype');
+}
+@font-face {
+    font-family: 'NotoSansCJKkr-Thin';
+    src: url('../../fonts/NotoSansCJKkr-Thin.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Lato-Regular';
+    src: url('../../fonts/lato/Lato-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Lato-Thin';
+    src: url('../../fonts/lato/Lato-Thin.ttf') format('truetype');
+}
+
+
+
+p {
+    margin: 0 !important;
+    line-height: normal !important;
+}
+.hetekee-color {
+    color: #3db39d !important;
+}
+.hetekee-content-color {
+    color: #272727 !important;
+}
+.bot-menu {
+    background: #177a69 !important;
+}
+.bot-menu-item:first-child {
+    border: none !important;
+    color: #fff !important;
+    font-family: NotoSansCJKkr-Regular !important;
+}
+.bot-menu-item:hover {
+    background: #3db39d !important;
+}
+
+
+
+

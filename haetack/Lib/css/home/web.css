@@ -1,0 +1,75 @@
+﻿@media only screen and (min-width: 600px) {
+    .hetekee-page {
+        padding-top: 145px;
+        padding-bottom: 0px;
+        filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+        src='/Lib/images/home/bg_main.png',
+        sizingMethod='scale');
+    }
+
+    .hetekee-main-fullscreen-content {
+        padding-left: 9% !important;
+    }
+
+    .hetekee-home-title {
+        margin-top: 100px;
+    }
+
+    .hetekee-home-title p {
+        font-size: 280% !important;
+        color: #fff;
+        font-family: Moebius_Regular_kor !important;
+        padding-bottom: 8px;
+    }
+
+    .hetekee-home-content {
+        margin-top: 29px;
+    }
+
+    .hetekee-home-content p {
+        font-size: 140%;
+        color: #fff;
+        font-family: NotoSansCJKkr-Regular !important;
+        padding-bottom: 4px;
+    }
+    .more-description {
+        color: #cbd3d6 !important; 
+        font-size: 131% !important;
+    }
+
+    .hetekee-googleplay {
+        margin-top: 37px;
+    }
+    .main-img {
+        width: 90%;
+    }
+
+
+
+
+
+    /* 동영상 */
+    .hetekee-video-page {
+        padding: 3.3% !important;
+    }
+
+    .hetekee-video-title {
+        font-size: 200%;
+        font-family: Moebius_Regular_kor !important;
+        margin-bottom: 1%;
+    }
+    .hetekee-video-content {
+        width: 100%;
+    }
+    .hetekee-video-content p {
+        font-size: 122%;
+        font-family: NotoSansCJKkr-Regular !important;
+        padding-bottom: 8px;
+        letter-spacing: -0.5px;
+    }
+
+    .hetekee-video-content-page {
+        padding: 70px !important;
+        background: #f3f3f3;
+    }
+}

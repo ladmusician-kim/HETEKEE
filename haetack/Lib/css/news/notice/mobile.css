@@ -1,0 +1,244 @@
+﻿/* pad */
+@media only screen and (max-width: 1200px) and (min-width: 601px) {
+     .main-section {
+        padding: 200px 70px 110px 70px !important;
+    }
+
+    .main-title {
+        font-size: 300%;
+        color: #fff;
+        font-family: Moebius_Regular_kor;
+    }
+
+    .pressless-section {
+        padding: 20px 5px 0px 5px !important;
+    }
+
+    .notice-title {
+        font-size: 24px;
+        font-family: Moebius_Regular_kor !important;
+    }
+
+    .notice-content {
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+
+    .notice-content p {
+        font-size: 23px;
+        margin-bottom: 5px;
+        font-family: NotoSansCJKkr-Regular !important;
+    }
+
+
+
+    /* theme */
+    .sample-img {
+        width: 100% !important;
+        background-image: url('../../../images/layout/default_image.png');
+    }
+    .team-grid {
+        margin: 0 !important;
+    }
+    .team-item {
+        border: 1px solid #e5e5e5;
+        width: 90% !important;
+        margin-top: 0 !important;
+        margin-bottom: 20px !important;
+    }
+    .team-no-item {
+        border: none !important;
+        display: none;
+    }
+    .team-item-descr {
+        margin: 0 !important;
+        padding: 0 !important;
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+    .team-item-name  {
+        border-bottom: 1px solid #e5e5e5;
+    }
+    .item-title {
+        padding-left: 15px;
+        padding-bottom: 15px;
+        padding-top: 5px;
+        font-size: 17px;
+        font-family: NotoSansCJKkr-Medium !important;
+        font-weight: bold;
+    }
+    .item-date {
+        padding-left: 15px;
+        padding-bottom: 5px;
+        padding-top: 15px;
+        font-size: 14px;
+        font-family: NotoSansCJKkr-Regular !important;
+        color: #b7b7b7;
+    }
+    .team-item-detail {
+        font-family: NotoSansCJKkr-Regular !important;
+        font-size: 16px;
+    }
+    .team-item-detail h4{
+        font-family: NotoSansCJKkr-Regular !important;
+        font-size: 24px;
+    }
+    .team-item-detail:hover {
+        text-decoration: none;
+    }
+    .moreItem {
+        width: 100%;
+        border: 1px solid #b7b7b7;
+        margin-bottom: 20px
+    }
+    .moreItem p {
+        width: 100%;
+        font-size: 14px;
+        line-height: 40px !important;
+        vertical-align: middle;
+        color: #b7b7b7;
+        font-family: NotoSansCJKkr-Light !important
+    }
+    .moreItem:hover{
+        background: #3db39d;
+        border: 1px solid #3db39d;
+    }
+    .moreItem a:hover {
+        text-decoration: none;
+    }
+    .moreItem p:hover {
+        color: #fff !important;
+    }
+    .no-item img {
+        width: 50%;
+        margin-top: 40px;
+        margin-bottom: 60px;
+    } 
+}
+@media only screen and (max-width: 600px) {
+     .main-section {
+        padding: 102px 70px 40px 70px !important;
+    }
+
+    .main-title {
+        font-size: 27px;
+        color: #fff;
+        font-family: Moebius_Regular_kor;
+    }
+
+    .pressless-section {
+        padding: 20px 5px 0px 5px !important;
+    }
+
+    .notice-title {
+        font-size: 24px;
+        font-family: Moebius_Regular_kor !important;
+    }
+
+    .notice-content {
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+
+    .notice-content p {
+        font-size: 23px;
+        margin-bottom: 5px;
+        font-family: NotoSansCJKkr-Regular !important;
+    }
+
+
+
+    /* theme */
+    .sample-img {
+        width: 100% !important;
+        background-image: url('../../../images/layout/default_image.png');
+    }
+    .team-grid {
+        margin: 0 !important;
+    }
+    .team-item {
+        border: 1px solid #e5e5e5;
+        width: 90% !important;
+        margin-top: 0 !important;
+        margin-bottom: 20px !important;
+    }
+    .team-no-item {
+        border: none !important;
+        display: none;
+    }
+    .team-item-descr {
+        margin: 0 !important;
+        padding: 0 !important;
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+    .team-item-name  {
+        border-bottom: 1px solid #e5e5e5;
+    }
+    .item-title {
+        padding-left: 15px;
+        padding-bottom: 15px;
+        padding-top: 5px;
+        font-size: 17px;
+        font-family: NotoSansCJKkr-Medium !important;
+        font-weight: bold;
+    }
+    .item-date {
+        padding-left: 15px;
+        padding-bottom: 5px;
+        padding-top: 15px;
+        font-size: 14px;
+        font-family: NotoSansCJKkr-Regular !important;
+        color: #b7b7b7;
+    }
+    .team-item-detail {
+        font-family: NotoSansCJKkr-Regular !important;
+        font-size: 16px;
+    }
+    .team-item-detail h4{
+        font-family: NotoSansCJKkr-Regular !important;
+        font-size: 24px;
+    }
+    .team-item-detail:hover {
+        text-decoration: none;
+    }
+
+
+    .moreItem {
+        width: 100%;
+        border: 1px solid #b7b7b7;
+        margin-bottom: 20px
+    }
+    .moreItem p {
+        width: 100%;
+        font-size: 14px;
+        line-height: 40px !important;
+        vertical-align: middle;
+        color: #b7b7b7;
+        font-family: NotoSansCJKkr-Light !important
+    }
+    .moreItem:hover{
+        background: #3db39d;
+        border: 1px solid #3db39d;
+    }
+    .moreItem a:hover {
+        text-decoration: none;
+    }
+    .moreItem p:hover {
+        color: #fff !important;
+    }
+    .no-item img {
+        width: 70%;
+        margin-top: 40px;
+        margin-bottom: 60px;
+    } 
+}
+
+/*iPhone 5 작은거*/ 
+@media screen and (device-aspect-ratio: 2/3) {
+}
+
+/*iPhone 5 */
+@media screen and (device-aspect-ratio: 40/71) {
+}
+
